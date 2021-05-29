@@ -1,0 +1,1676 @@
+
+  <head>
+    <!-- Required styles for MDC Web -->
+    <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+    <link rel="stylesheet" href="mdc-demo-card.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <style>
+     .tab-panel {
+       display: none;
+     }
+     .tab-panel.active {
+       display: flex;
+     }
+    </style>
+  </head>
+  <body>
+  
+      <div class="mdc-tab-bar" role="tablist">
+        <div class="mdc-tab-scroller">
+          <div class="mdc-tab-scroller__scroll-area">
+            <div class="mdc-tab-scroller__scroll-content">
+  
+                <button class="mdc-tab mdc-tab--active" role="tab" aria-selected="true" tabindex="0">
+                  <span class="mdc-tab__content">
+                    <span class="mdc-tab__icon material-icons" aria-hidden="true">trending_up</span>
+                    <span class="mdc-tab__text-label">CS:GO live</span>
+                  </span>
+                  <span class="mdc-tab-indicator mdc-tab-indicator--active">
+                    <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+                  </span>
+                  <span class="mdc-tab__ripple"></span>
+                </button>
+    
+
+                <button class="mdc-tab" role="tab" aria-selected="true" tabindex="0">
+                  <span class="mdc-tab__content">
+                    <span class="mdc-tab__icon material-icons" aria-hidden="true">calendar_today</span>
+                    <span class="mdc-tab__text-label">CS:GO all-time</span>
+                  </span>
+                  <span class="mdc-tab-indicator">
+                    <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+                  </span>
+                  <span class="mdc-tab__ripple"></span>
+                </button>
+    
+            </div>
+          </div>
+        </div>
+      </div>
+  <h2 style="padding-top: 10px; text-align: center">CS:GO Elo Ratings</h2><div style="text-align: center">Data from <a href="https://hltv.org">hltv.org</a>.</div>
+<div style="margin-top: 25px; flex-direction: row; justify-content: space-around" class="tab-panel active">  <div style="max-width: 500px"><div style="text-align: center; padding-bottom: 10px">Teams</div>
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Gambit_Esports_2020_logo.svg/800px-Gambit_Esports_2020_logo.svg.png"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#1 Gambit</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">1797</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="https://hltv.org/matches/2348989/spirit-vs-gambit-epic-league-cis-2021">Last match</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://upload.wikimedia.org/wikipedia/en/8/82/Mousesports_logo.png"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#2 mousesports</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">1781</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="https://hltv.org/matches/2348447/mousesports-vs-g2-flashpoint-3">Last match</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://upload.wikimedia.org/wikipedia/en/d/d0/Ninjas_in_Pyjamas_logo.svg"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#3 NiP</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">1764</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="https://hltv.org/matches/2348440/g2-vs-nip-flashpoint-3">Last match</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://liquipedia.net/commons/images/b/bc/Team_Fiend.png"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#4 Fiend</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">1764</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="https://hltv.org/matches/2349085/fiend-vs-grond-european-development-championship-4-closed-qualifier">Last match</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://liquipedia.net/commons/images/f/ff/Heroic_2019.png"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#5 Heroic</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">1760</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="https://hltv.org/matches/2348439/heroic-vs-nip-flashpoint-3">Last match</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://liquipedia.net/commons/images/f/f2/Team_Spirit_2021.png"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#6 Spirit</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">1758</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="https://hltv.org/matches/2348992/natus-vincere-vs-spirit-epic-league-cis-2021">Last match</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://upload.wikimedia.org/wikipedia/en/1/12/Esports_organization_G2_Esports_logo.svg"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#7 G2</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">1753</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="https://hltv.org/matches/2348440/g2-vs-nip-flashpoint-3">Last match</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://upload.wikimedia.org/wikipedia/en/a/ac/NaVi_logo.svg"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#8 Na'Vi</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">1741</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="https://hltv.org/matches/2348992/natus-vincere-vs-spirit-epic-league-cis-2021">Last match</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://liquipedia.net/commons/images/thumb/d/d6/Akuma_allmode.png/55px-Akuma_allmode.png"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#9 Akuma</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">1734</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="https://hltv.org/matches/2348990/virtuspro-vs-akuma-epic-league-cis-2021">Last match</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://upload.wikimedia.org/wikipedia/en/thumb/7/7d/Astralis_logo.svg/220px-Astralis_logo.svg.png"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#10 Astralis</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">1733</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="https://hltv.org/matches/2348437/astralis-vs-heroic-flashpoint-3">Last match</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://liquipedia.net/commons/images/7/7d/ENCE_2020_infoboximage.png"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#11 ENCE</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">1732</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="https://hltv.org/matches/2348752/fiend-vs-ence-lootbet-season-9">Last match</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://upload.wikimedia.org/wikipedia/en/f/f1/Team_Liquid_logo.svg"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#12 Team Liquid</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">1731</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="https://hltv.org/matches/2348860/furia-vs-liquid-cs-summit-8">Last match</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://upload.wikimedia.org/wikipedia/en/3/3b/Virtus_pro_logo_new.png"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#13 Virtus.pro</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">1728</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="https://hltv.org/matches/2348991/entropiq-vs-virtuspro-epic-league-cis-2021">Last match</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://upload.wikimedia.org/wikipedia/en/1/18/FPX_Esports_logo.png"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#14 FunPlus Phoenix</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">1728</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="https://hltv.org/matches/2348453/funplus-phoenix-vs-sprout-flashpoint-3">Last match</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://upload.wikimedia.org/wikipedia/en/b/be/Origen_esports_logo.svg"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#15 Origen</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">1724</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="https://hltv.org/matches/2348427/vitality-vs-og-flashpoint-3">Last match</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://liquipedia.net/commons/images/d/df/EXTREMUM_logo.png"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#16 EXTREMUM</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">1723</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="https://hltv.org/matches/2348861/extremum-vs-o-plano-cs-summit-8">Last match</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://upload.wikimedia.org/wikipedia/en/thumb/9/96/Team_vitality_logo.svg/220px-Team_vitality_logo.svg.png"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#17 Vitality</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">1723</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="https://hltv.org/matches/2348450/vitality-vs-dbl-poney-flashpoint-3">Last match</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://upload.wikimedia.org/wikipedia/commons/b/bc/Complexity_Gaming_Logo_-_Blue.png"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#18 Complexity</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">1718</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="https://hltv.org/matches/2348455/complexity-vs-sprout-flashpoint-3">Last match</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://liquipedia.net/commons/images/1/17/X-kom_AGO.png"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#19 AGO</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">1715</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="https://hltv.org/matches/2348932/ago-vs-entropiq-spring-sweet-spring-2">Last match</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://liquipedia.net/commons/images/9/9b/FURIA_Esports.png"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#20 Furia</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">1711</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="https://hltv.org/matches/2348860/furia-vs-liquid-cs-summit-8">Last match</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://liquipedia.net/commons/images/d/d3/Saw_2021.png"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#21 SAW</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">1711</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="https://hltv.org/matches/2348956/alternate-attax-vs-saw-esea-premier-season-37-europe">Last match</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://liquipedia.net/commons/images/c/c5/Entropiq_logo.png"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#22 Entropiq</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">1709</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="https://hltv.org/matches/2348991/entropiq-vs-virtuspro-epic-league-cis-2021">Last match</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://liquipedia.net/commons/images/3/31/1win.png"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#23 1win</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">1705</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="https://hltv.org/matches/2349079/1win-vs-mad-lions-european-development-championship-4-closed-qualifier">Last match</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://liquipedia.net/commons/images/4/43/Extra_Salt_teamcard.png"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#24 Extra Salt</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">1705</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="https://hltv.org/matches/2348858/extremum-vs-extra-salt-cs-summit-8">Last match</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://upload.wikimedia.org/wikipedia/commons/4/4d/Faze_Clan.svg"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#25 FaZe</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">1702</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="https://hltv.org/matches/2348429/sprout-vs-faze-flashpoint-3">Last match</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+  </div>  <div style="max-width: 500px"><div style="text-align: center; padding-bottom: 10px">Players</div>
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://liquipedia.net/commons/images/0/0b/Gambit_sh1ro_2021.png"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#1 sh1ro</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">1844</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="https://hltv.org/matches/2348989/spirit-vs-gambit-epic-league-cis-2021">Last match</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://upload.wikimedia.org/wikipedia/commons/2/24/Oleksandr_s1mple_Kostyliev.jpg"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#2 s1mple</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">1841</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="https://hltv.org/matches/2348992/natus-vincere-vs-spirit-epic-league-cis-2021">Last match</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://liquipedia.net/commons/images/6/61/Dream3r.jpg"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#3 dream3r</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">1833</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="https://hltv.org/matches/2349085/fiend-vs-grond-european-development-championship-4-closed-qualifier">Last match</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://upload.wikimedia.org/wikipedia/commons/0/0f/DH_Leipzig16_devve_device.JPG"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#4 dev1ce</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">1828</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="https://hltv.org/matches/2348440/g2-vs-nip-flashpoint-3">Last match</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://liquipedia.net/commons/images/2/2f/Jame_VP_Epicenter_2019.jpeg"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#5 Jame</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">1821</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="https://hltv.org/matches/2348991/entropiq-vs-virtuspro-epic-league-cis-2021">Last match</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://liquipedia.net/commons/images/a/ac/Gambit_Hobbit_2021.png"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#6 Hobbit</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">1807</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="https://hltv.org/matches/2348989/spirit-vs-gambit-epic-league-cis-2021">Last match</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://liquipedia.net/commons/images/4/4c/Smooya_%40_CCF.jpg"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#7 Smooya</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">1806</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="https://hltv.org/matches/2349053/ldlc-vs-movistar-riders-esl-national-championship-global-playoffs-spring-2021">Last match</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://liquipedia.net/commons/images/e/e3/Nawwk_%40_IEM_Katowice_2020.jpg"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#8 nawwk</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">1804</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="https://hltv.org/matches/2347027/gambit-vs-nip-esl-pro-league-season-13">Last match</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://liquipedia.net/commons/images/4/48/Frozen_%40_IEM_Katowice_2020.jpg"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#9 frozen</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">1800</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="https://hltv.org/matches/2348447/mousesports-vs-g2-flashpoint-3">Last match</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://liquipedia.net/commons/images/e/e3/Ropz_%40_EPL_S10.jpg"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#10 ropz</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">1800</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="https://hltv.org/matches/2348447/mousesports-vs-g2-flashpoint-3">Last match</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://liquipedia.net/commons/images/1/17/ES_oSee_Apr2021.png"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#11 oSee</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">1798</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="https://hltv.org/matches/2348858/extremum-vs-extra-salt-cs-summit-8">Last match</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://liquipedia.net/commons/images/c/c9/TeSeS_DreamHack_Summer_2019.jpg"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#12 TeSeS</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">1790</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="https://hltv.org/matches/2348439/heroic-vs-nip-flashpoint-3">Last match</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://liquipedia.net/commons/images/9/9a/M0NESY.jpg"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#13 m0NESY</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">1786</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="https://hltv.org/matches/2349029/navi-junior-vs-gorillaz-elisa-invitational-summer-2021-regionals">Last match</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://liquipedia.net/commons/images/9/94/NiKo_%40_IEM_Katowice_2020.jpg"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#14 NiKo</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">1786</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="https://hltv.org/matches/2348440/g2-vs-nip-flashpoint-3">Last match</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src=""></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#15 degster</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">1785</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="https://hltv.org/matches/2348992/natus-vincere-vs-spirit-epic-league-cis-2021">Last match</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://liquipedia.net/commons/images/8/82/CadiaN_%40_DHDE20.jpg"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#16 cadiaN</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">1784</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="https://hltv.org/matches/2348439/heroic-vs-nip-flashpoint-3">Last match</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://liquipedia.net/commons/images/b/b9/Broky_%40_IEM_Katowice_2020.jpg"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#17 broky</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">1784</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="https://hltv.org/matches/2348429/sprout-vs-faze-flashpoint-3">Last match</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://liquipedia.net/commons/images/f/fd/HuNter-_%40_IEM_Katowice_2020.jpg"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#18 huNter-</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">1778</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="https://hltv.org/matches/2348440/g2-vs-nip-flashpoint-3">Last match</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://liquipedia.net/commons/images/a/a6/H4rn_at_BGE_Stara_Zagora.png"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#19 h4rn</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">1778</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="https://hltv.org/matches/2349085/fiend-vs-grond-european-development-championship-4-closed-qualifier">Last match</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://liquipedia.net/commons/images/d/d8/Twistzz_%40_ESL_NY_2019.jpg"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#20 Twistzz</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">1775</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="https://hltv.org/matches/2348429/sprout-vs-faze-flashpoint-3">Last match</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://liquipedia.net/commons/images/c/ca/Dennyslaw_at_BGE_Stara_Zagora.png"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#21 dennyslaw</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">1773</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="https://hltv.org/matches/2348928/skade-vs-endpoint-spring-sweet-spring-2">Last match</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://liquipedia.net/commons/images/d/d2/FURIA_KSCERATO_2021.png"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#22 KSCERATO</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">1773</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="https://hltv.org/matches/2348860/furia-vs-liquid-cs-summit-8">Last match</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://upload.wikimedia.org/wikipedia/commons/3/39/IEM_Chicago_Final_Edits-9731_%2848353577846%29.jpg"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#23 ZywOo</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">1773</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="https://hltv.org/matches/2348450/vitality-vs-dbl-poney-flashpoint-3">Last match</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://liquipedia.net/commons/images/4/48/OG_mantuu_2021.jpg"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#24 mantuu</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">1773</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="https://hltv.org/matches/2348427/vitality-vs-og-flashpoint-3">Last match</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://liquipedia.net/commons/images/b/bd/Coldzera_%40_IEM_Katowice_2020.jpg"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#25 coldzera</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">1772</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="https://hltv.org/matches/2348429/sprout-vs-faze-flashpoint-3">Last match</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+  </div></div><div style="margin-top: 25px; flex-direction: row; justify-content: space-around" class="tab-panel ">  <div style="max-width: 500px"><div style="text-align: center; padding-bottom: 10px">Teams</div>
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://upload.wikimedia.org/wikipedia/en/thumb/7/7d/Astralis_logo.svg/220px-Astralis_logo.svg.png"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#1 Astralis</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">1872</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="https://hltv.org/matches/2326844/space-soldiers-vs-astralis-blast-pro-series-istanbul-2018">September 28, 2018</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://upload.wikimedia.org/wikipedia/commons/4/4d/Faze_Clan.svg"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#2 FaZe</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">1852</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="https://hltv.org/matches/2315573/heroic-vs-faze-epicenter-2017-europe-closed-qualifier">October 03, 2017</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://upload.wikimedia.org/wikipedia/en/thumb/9/96/Team_vitality_logo.svg/220px-Team_vitality_logo.svg.png"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#3 Vitality</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">1849</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="https://hltv.org/matches/2345715/big-vs-vitality-iem-global-challenge-2020">December 15, 2020</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://upload.wikimedia.org/wikipedia/en/f/f1/Team_Liquid_logo.svg"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#4 Team Liquid</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">1847</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="https://hltv.org/matches/2334926/ence-vs-liquid-iem-chicago-2019">July 21, 2019</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://upload.wikimedia.org/wikipedia/en/a/ac/NaVi_logo.svg"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#5 Na'Vi</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">1844</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="https://hltv.org/matches/2339402/g2-vs-natus-vincere-iem-katowice-2020">March 01, 2020</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://upload.wikimedia.org/wikipedia/en/thumb/7/7d/Astralis_logo.svg/220px-Astralis_logo.svg.png"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#6 Astralis</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">1843</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="https://hltv.org/matches/2337462/100-thieves-vs-astralis-iem-beijing-2019">November 10, 2019</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://upload.wikimedia.org/wikipedia/en/thumb/7/7d/Astralis_logo.svg/220px-Astralis_logo.svg.png"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#7 Astralis</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">1841</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="https://hltv.org/matches/2307143/optic-vs-astralis-ecs-season-2-finals">December 12, 2016</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://upload.wikimedia.org/wikipedia/en/4/43/Esports_organization_Fnatic_logo.svg"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#8 Fnatic</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">1834</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="https://hltv.org/matches/2301119/mousesports-vs-fnatic-esl-pro-league-season-3">March 13, 2016</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://upload.wikimedia.org/wikipedia/commons/c/c7/TSM_Logo.svg"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#9 TSM</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">1833</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="https://hltv.org/matches/2298502/dignitas-vs-tsm-esl-esea-pro-league-season-2">October 08, 2015</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://upload.wikimedia.org/wikipedia/en/4/43/Esports_organization_Fnatic_logo.svg"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#10 Fnatic</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">1827</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="https://hltv.org/matches/2296787/flipsid3-vs-fnatic-faceit-league-2015-stage-2">June 30, 2015</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://upload.wikimedia.org/wikipedia/en/4/4d/SK_Gaming_logo.svg"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#11 SK Gaming</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">1823</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="https://hltv.org/matches/2317926/faze-vs-sk-esl-pro-league-season-6-finals">December 10, 2017</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://upload.wikimedia.org/wikipedia/en/a/ac/NaVi_logo.svg"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#12 Na'Vi</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">1821</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="https://hltv.org/matches/2326425/mibr-vs-natus-vincere-faceit-major-2018">September 22, 2018</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://liquipedia.net/commons/images/3/38/BIG_2020.png"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#13 BIG</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">1821</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="https://hltv.org/matches/2342402/vitality-vs-big-cs-summit-6-europe">July 05, 2020</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://upload.wikimedia.org/wikipedia/en/f/f1/Team_Liquid_logo.svg"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#14 Team Liquid</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">1821</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="https://hltv.org/matches/2329680/astralis-vs-liquid-esl-pro-league-season-8-finals">December 09, 2018</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://upload.wikimedia.org/wikipedia/commons/f/f7/Cloud9_logo.svg"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#15 Cloud9</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">1820</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="https://hltv.org/matches/2319208/sk-vs-cloud9-cs-summit-2">February 10, 2018</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://upload.wikimedia.org/wikipedia/en/8/82/Mousesports_logo.png"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#16 mousesports</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">1820</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="https://hltv.org/matches/2338071/fnatic-vs-mousesports-esl-pro-league-season-10-finals">December 08, 2019</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Gambit_Esports_2020_logo.svg/800px-Gambit_Esports_2020_logo.svg.png"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#17 Gambit</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">1818</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="https://hltv.org/matches/2347752/heroic-vs-gambit-blast-premier-spring-showdown-2021">April 18, 2021</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://upload.wikimedia.org/wikipedia/en/thumb/7/7d/Astralis_logo.svg/220px-Astralis_logo.svg.png"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#18 Astralis</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">1818</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="https://hltv.org/matches/2345743/big-vs-astralis-blast-premier-fall-2020-finals">December 13, 2020</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://upload.wikimedia.org/wikipedia/en/4/4d/SK_Gaming_logo.svg"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#19 SK Gaming</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">1816</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="https://hltv.org/matches/2307939/virtuspro-vs-sk-dreamhack-masters-las-vegas-2017">February 20, 2017</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://upload.wikimedia.org/wikipedia/en/a/ac/NaVi_logo.svg"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#20 Na'Vi</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">1816</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="https://hltv.org/matches/2346068/astralis-vs-natus-vincere-blast-premier-global-final-2020">January 24, 2021</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://upload.wikimedia.org/wikipedia/en/a/ac/NaVi_logo.svg"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#21 Na'Vi</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">1815</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="https://hltv.org/matches/2319701/mousesports-vs-natus-vincere-starseries-i-league-season-4">February 25, 2018</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://upload.wikimedia.org/wikipedia/en/1/12/Esports_organization_G2_Esports_logo.svg"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#22 G2</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">1815</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="https://hltv.org/matches/2339400/fnatic-vs-g2-iem-katowice-2020">February 29, 2020</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://upload.wikimedia.org/wikipedia/en/8/82/Mousesports_logo.png"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#23 mousesports</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">1814</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="https://hltv.org/matches/2318617/quantum-bellator-fire-vs-mousesports-eleague-major-2018">January 22, 2018</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://upload.wikimedia.org/wikipedia/en/3/3b/Virtus_pro_logo_new.png"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#24 Virtus.pro</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">1814</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="https://hltv.org/matches/2308162/sk-vs-virtuspro-iem-katowice-2017">March 02, 2017</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://upload.wikimedia.org/wikipedia/commons/4/4d/Faze_Clan.svg"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#25 FaZe</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">1812</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="https://hltv.org/matches/2306775/nip-vs-faze-ecs-season-2-europe">November 24, 2016</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+  </div>  <div style="max-width: 500px"><div style="text-align: center; padding-bottom: 10px">Players</div>
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://upload.wikimedia.org/wikipedia/commons/2/24/Oleksandr_s1mple_Kostyliev.jpg"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#1 s1mple</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">1945</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="https://hltv.org/matches/2340399/natus-vincere-vs-big-esl-pro-league-season-11-europe">March 19, 2020</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://upload.wikimedia.org/wikipedia/commons/3/39/IEM_Chicago_Final_Edits-9731_%2848353577846%29.jpg"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#2 ZywOo</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">1935</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="https://hltv.org/matches/2346330/vitality-vs-complexity-blast-premier-spring-groups-2021">February 08, 2021</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://liquipedia.net/commons/images/b/bd/Coldzera_%40_IEM_Katowice_2020.jpg"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#3 coldzera</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">1909</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="https://hltv.org/matches/2319688/natus-vincere-vs-sk-starseries-i-league-season-4">February 20, 2018</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://liquipedia.net/commons/images/0/0b/Gambit_sh1ro_2021.png"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#4 sh1ro</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">1908</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="https://hltv.org/matches/2348011/gambit-vs-g2-dreamhack-masters-spring-2021">May 08, 2021</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://upload.wikimedia.org/wikipedia/commons/0/0f/DH_Leipzig16_devve_device.JPG"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#5 dev1ce</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">1907</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="https://hltv.org/matches/2324806/astralis-vs-liquid-eleague-csgo-premier-2018">July 23, 2018</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://liquipedia.net/commons/images/9/94/NiKo_%40_IEM_Katowice_2020.jpg"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#6 NiKo</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">1907</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="https://hltv.org/matches/2324805/faze-vs-mousesports-eleague-csgo-premier-2018">July 22, 2018</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://upload.wikimedia.org/wikipedia/commons/6/60/DH_Leipzig16_Guardian_interview_%28cropped%29.JPG"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#7 GuardiaN</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">1902</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="https://hltv.org/matches/2316286/sk-vs-faze-epicenter-2017">October 25, 2017</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://liquipedia.net/commons/images/2/2f/Jame_VP_Epicenter_2019.jpeg"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#8 Jame</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">1901</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="https://hltv.org/matches/2331964/avangar-vs-windigo-dreamhack-masters-dallas-2019-europe-closed-qualifier">March 23, 2019</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://liquipedia.net/commons/images/8/86/Olofmeister_%40_IEM_Katowice_2020.jpg"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#9 olofmeister</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">1898</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="https://hltv.org/matches/2296860/fnatic-vs-tsm-esl-esea-pro-league-season-1-finals">July 02, 2015</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://liquipedia.net/commons/images/d/d8/Twistzz_%40_ESL_NY_2019.jpg"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#10 Twistzz</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">1884</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="https://hltv.org/matches/2334914/liquid-vs-envy-iem-chicago-2019">July 18, 2019</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://liquipedia.net/commons/images/4/4c/KRIMZ_%40_IEM_Katowice_2020.jpg"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#11 KRIMZ</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">1881</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="https://hltv.org/matches/2299733/sk-vs-fnatic-fragbite-masters-season-5-finals">December 06, 2015</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://liquipedia.net/commons/images/5/58/Skadoodle_at_StarLadder_i-League_StarSeries_S4.jpg"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#12 Skadoodle</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">1881</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="https://hltv.org/matches/2298372/cloud9-vs-luminosity-esl-esea-pro-league-season-2">October 02, 2015</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://liquipedia.net/commons/images/2/29/Flusha_%40_EPL_S10_Finals.jpg"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#13 flusha</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">1880</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="https://hltv.org/matches/2297890/virtuspro-vs-fnatic-esl-esea-dubai-invitational-2015">September 11, 2015</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://liquipedia.net/commons/images/6/67/Magisk_%40_IEM_Katowice_2020.jpg"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#14 Magisk</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">1879</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="https://hltv.org/matches/2322809/sk-vs-astralis-esl-pro-league-season-7-finals">May 16, 2018</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://liquipedia.net/commons/images/a/a3/TL_EliGE_2021.png"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#15 EliGE</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">1879</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="https://hltv.org/matches/2336161/liquid-vs-eunited-ecs-season-8-north-america-week-1">September 16, 2019</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://liquipedia.net/commons/images/0/0a/KennyS_%40_IEM_Katowice_2020.jpg"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#16 kennyS</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">1877</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="https://hltv.org/matches/2313987/g2-vs-natus-vincere-esl-pro-league-season-6-europe">October 06, 2017</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://liquipedia.net/commons/images/5/51/BlameF_%40_DHO_Anaheim_2020.jpg"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#17 blameF</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">1875</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="https://hltv.org/matches/2343668/complexity-vs-mousesports-esl-pro-league-season-12-europe">September 16, 2020</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://liquipedia.net/commons/images/f/fb/Autimatic_DHO_Anaheim_2020.jpg"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#18 autimatic</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">1874</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="https://hltv.org/matches/2319692/cloud9-vs-mousesports-starseries-i-league-season-4">February 21, 2018</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://liquipedia.net/commons/images/4/4c/Smooya_%40_CCF.jpg"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#19 Smooya</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">1872</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="https://hltv.org/matches/2348526/movistar-riders-vs-anonymo-lootbet-season-9">May 05, 2021</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://liquipedia.net/commons/images/a/a4/JUGi_%40_DHSEV19.jpg"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#20 JUGi</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">1872</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="https://hltv.org/matches/2319205/nip-vs-heroic-cs-summit-2">February 10, 2018</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://liquipedia.net/commons/images/e/e3/Ropz_%40_EPL_S10.jpg"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#21 ropz</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">1870</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="https://hltv.org/matches/2336331/forze-vs-mousesports-ggbet-beijing-invitational-iem-beijing-2019-qualifier">September 20, 2019</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src=""></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#22 degster</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">1869</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="https://hltv.org/matches/2345478/gambit-vs-espada-nine-to-five-6">November 24, 2020</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://liquipedia.net/commons/images/2/24/Xyp9x_%40_IEM_Katowice_2020.jpg"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#23 Xyp9x</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">1869</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="https://hltv.org/matches/2327131/astralis-vs-faze-esl-pro-league-season-8-europe">October 04, 2018</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://liquipedia.net/commons/images/a/a0/Dupreeh_%40_IEM_Katowice_2020.jpg"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#24 dupreeh</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">1867</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="https://hltv.org/matches/2326763/astralis-vs-mibr-blast-pro-series-istanbul-2018">September 29, 2018</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://liquipedia.net/commons/images/7/79/Xsepower_%40_DHANA20.jpg"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#25 xsepower</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">1863</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="https://hltv.org/matches/2330752/hellraisers-vs-forze-iem-sydney-2019-europe-closed-qualifier">February 06, 2019</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+  </div></div>
+    <!-- Required MDC Web JavaScript library -->
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <script>
+     //setup tabs
+     window.onload = function() {
+       for (const e of document.querySelectorAll(".mdc-tab-bar")) {
+         let tab = new mdc.tabBar.MDCTabBar(e)
+         tab.preventDefaultOnClick = true
+
+         tab.listen("MDCTabBar:activated", function({detail: {index: index}}) {
+           // Hide all panels.
+           for (const t of document.querySelectorAll(".tab-panel")) {
+             t.classList.remove("active")
+           }
+
+           // Show the current one.
+           let tab = document.querySelector(".tab-panel:nth-child(" + (index + 4) + ")")
+           tab.classList.add("active")
+         })
+       }
+     };
+    </script>
+  </body>
+</html>
+  

@@ -1,0 +1,25 @@
+{
+  "name": "esports-elos",
+  "version": "1.0.0",
+  "description": "Note to self: link csgo/match_info.csv, csgo/sides_info.csv, csgo/stats_info.csv to /tmp, that's where the scraper reads/writes from# esports-elos",
+  "main": "generateHtml.js",
+  "dependencies": {
+    "csv-parse": "^4.15.4",
+    "csv-stringify": "^5.6.2",
+    "moment": "^2.29.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jasontrigg0/esports-elos.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jasontrigg0/esports-elos/issues"
+  },
+  "homepage": "https://github.com/jasontrigg0/esports-elos#readme"
+}
