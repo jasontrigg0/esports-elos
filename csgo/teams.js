@@ -17,7 +17,7 @@ const teamInfo = {
   },
   "/team/8297/furia": {
   name: "Furia",
-  image: "https://liquipedia.net/commons/images/9/9b/FURIA_Esports.png"
+  image: "https://pbs.twimg.com/profile_images/1394491942696804354/K3Qdl0Vh_400x400.jpg"
   },
   "/team/4494/mousesports": {
     name: "mousesports",
@@ -29,7 +29,7 @@ const teamInfo = {
   },
   "/team/7733/boom": {
     name: "BOOM",
-    image: "https://liquipedia.net/commons/images/f/f6/Boom_Esports_logo.png"
+    image: "https://pbs.twimg.com/profile_images/1374722239120166921/sQchrzGx_400x400.jpg"
   },
   "/team/10399/evil-geniuses": {
     name: "Evil Geniuses",
@@ -41,7 +41,7 @@ const teamInfo = {
   },
   "/team/7175/heroic": {
     name: "Heroic",
-    image: "https://liquipedia.net/commons/images/f/ff/Heroic_2019.png"
+    image: "https://pbs.twimg.com/profile_images/1211646178770604033/Yux_73BM_400x400.jpg"
   },
   "/team/10503/og": {
     name: "Origen",
@@ -57,7 +57,7 @@ const teamInfo = {
   },
   "/team/7532/big": {
     name: "BIG",
-    image: "https://liquipedia.net/commons/images/3/38/BIG_2020.png"
+    image: "https://pbs.twimg.com/profile_images/1373206859390279681/YmcfEHTU_400x400.jpg"
   },
   "/team/5973/liquid": {
     name: "Team Liquid",
@@ -81,11 +81,11 @@ const teamInfo = {
   },
   "/team/7020/spirit": {
     name: "Spirit",
-    image: "https://liquipedia.net/commons/images/f/f2/Team_Spirit_2021.png"
+    image: "https://pbs.twimg.com/profile_images/1349363430273273858/RxpB-u6__400x400.jpg"
   },
   "/team/8362/mad-lions": {
     name: "MAD Lions",
-    image: "https://liquipedia.net/commons/images/8/83/MAD_Lions_new.png"
+    image: "https://pbs.twimg.com/profile_images/1362784198109626378/9XpbbSAO_400x400.jpg"
   },
   "/team/7606/vici": {
     name: "Vici",
@@ -97,31 +97,31 @@ const teamInfo = {
   },
   "/team/8668/order": {
     name: "ORDER",
-    image: "https://liquipedia.net/commons/images/9/9c/ORDERlogo.png"
+    image: "https://pbs.twimg.com/profile_images/1351424549791797249/eQvluR5B_400x400.jpg"
   },
   "/team/4869/ence": {
     name: "ENCE",
-    image: "https://liquipedia.net/commons/images/7/7d/ENCE_2020_infoboximage.png"
+    image: "https://upload.wikimedia.org/wikipedia/fi/a/a3/Ence-logo-2021-png.png"
   },
   "/team/10831/entropiq": {
     name: "Entropiq",
-    image: "https://liquipedia.net/commons/images/c/c5/Entropiq_logo.png"
+    image: "https://pbs.twimg.com/profile_images/1237093087534596097/QjQnWKtN_400x400.jpg"
   },
   "/team/10960/young-ninjas": {
     name: "Young Ninjas",
-    image: "https://liquipedia.net/commons/images/9/9f/Ninjas_in_Pyjamas_2021.png"
+    image: "https://upload.wikimedia.org/wikipedia/en/d/d0/Ninjas_in_Pyjamas_logo.svg"
   },
   "/team/10948/extra-salt": {
     name: "Extra Salt",
-    image: "https://liquipedia.net/commons/images/4/43/Extra_Salt_teamcard.png"
+    image: "https://pbs.twimg.com/profile_images/1385647654735122438/c2RxMMEJ_400x400.jpg"
   },
   "/team/11066/fiend": {
     name: "Fiend",
-    image: "https://liquipedia.net/commons/images/b/bc/Team_Fiend.png"
+    image: "https://pbs.twimg.com/profile_images/1373973058940248065/q65S1O_j_400x400.jpg"
   },
   "/team/11003/dbl-poney": {
     name: "Double Poney",
-    image: "https://liquipedia.net/commons/images/f/f9/DBL_Poney.png"
+    image: ""
   },
   "/team/10671/funplus-phoenix": {
     name: "FunPlus Phoenix",
@@ -129,15 +129,15 @@ const teamInfo = {
   },
   "/team/8135/forze": {
     name: "forZe",
-    image: "https://liquipedia.net/commons/images/d/de/ForZe_2019.png"
+    image: "https://pbs.twimg.com/profile_images/1372463271748501508/vj2JA0dX_400x400.jpg"
   },
   "/team/10567/saw": {
     name: "SAW",
-    image: "https://liquipedia.net/commons/images/d/d3/Saw_2021.png"
+    image: "https://pbs.twimg.com/profile_images/1353812018608922625/bdxdCnja_400x400.jpg"
   },
   "/team/10096/extremum": {
     name: "EXTREMUM",
-    image: "https://liquipedia.net/commons/images/d/df/EXTREMUM_logo.png"
+    image: "https://pbs.twimg.com/profile_images/1338751595820015616/9fkUlA6W_400x400.jpg"
   },
   "/team/6667/faze": {
     name: "FaZe",
@@ -145,7 +145,7 @@ const teamInfo = {
   },
   "/team/7244/k23": {
     name: "K23",
-    image: "https://liquipedia.net/commons/images/e/e6/K23_2020.png"
+    image: "https://pbs.twimg.com/profile_images/1348628685654515712/2iNnpZr__400x400.jpg"
   },
   "/team/5996/tsm": {
     name: "TSM",
@@ -157,31 +157,31 @@ const teamInfo = {
   },
   "/team/8963/lyngby-vikings": {
     name: "Lyngby Vikings",
-    image: "https://liquipedia.net/commons/images/7/7f/Lyngby_Vikings.png"
+    image: "https://pbs.twimg.com/profile_images/1344275972602912770/ZQc8OdU8_400x400.jpg"
   },
   "/team/10386/skade": {
     name: "SKADE",
-    image: "https://liquipedia.net/commons/images/a/ab/SKADE_December_2019.png"
+    image: "https://pbs.twimg.com/profile_images/1388101424160993280/qoVa9Mym_400x400.jpg"
   },
   "/team/11148/akuma": {
     name: "Akuma",
-    image: "https://liquipedia.net/commons/images/thumb/d/d6/Akuma_allmode.png/55px-Akuma_allmode.png"
+    image: "https://pbs.twimg.com/profile_images/1210706096484163585/e1VJxQ0g_400x400.jpg"
   },
   "/team/10621/1win": {
     name: "1win",
-    image: "https://liquipedia.net/commons/images/3/31/1win.png"
+    image: ""
   },
   "/team/7461/copenhagen-flames": {
     name: "Copenhagen Flames",
-    image: "https://liquipedia.net/commons/images/d/d0/Copenhagen_Flames_2018.png"
+    image: "https://pbs.twimg.com/profile_images/1343231187783983104/tMJ72SRj_400x400.jpg"
   },
   "/team/10426/wisla-krakow": {
     name: "Wisła Kraków",
-    image: "https://liquipedia.net/commons/images/c/cd/Wislakrakow.png"
+    image: "https://pbs.twimg.com/profile_images/1362096963785785344/bYePf-ku_400x400.jpg"
   },
   "/team/8068/ago": {
     name: "AGO",
-    image: "https://liquipedia.net/commons/images/1/17/X-kom_AGO.png"
+    image: "https://pbs.twimg.com/profile_images/1324335783063543808/FCjOgbyW_400x400.jpg"
   }
 }
 
