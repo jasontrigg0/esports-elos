@@ -153,7 +153,7 @@ const teamInfo = {
   },
   "/team/6137/sk": {
     name: "SK Gaming",
-    image: "https://upload.wikimedia.org/wikipedia/en/4/4d/SK_Gaming_logo.svg"
+    image: "https://pbs.twimg.com/profile_images/1389130327562543104/UxAo0Qpr_400x400.jpg"
   },
   "/team/8963/lyngby-vikings": {
     name: "Lyngby Vikings",
