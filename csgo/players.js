@@ -5,7 +5,7 @@ const playerInfo = {
   },
   "/player/16920/sh1ro": {
     name: "sh1ro",
-    image: "https://liquipedia.net/commons/images/0/0b/Gambit_sh1ro_2021.png"
+    image: "https://img-cdn.hltv.org/playerbodyshot/EtMq1CXEq0ds96CzKjI4N0.png?bg=3e4c54&h=800&ixlib=java-2.1.0&rect=124%2C16%2C463%2C463&w=800&s=13ff89ce4c511f6c3390793fe012cca9"
   },
   "/player/7998/s1mple": {
     name: "s1mple",
@@ -13,7 +13,7 @@ const playerInfo = {
   },
   "/player/7266/syrson": {
     name: "syrsoN",
-    image: "https://liquipedia.net/commons/images/6/68/SyrsoN_at_Dreamhack_Open_Leipzig_2020.jpg"
+    image: "https://static.hltv.org/images/playerprofile/thumb/7266/800.jpeg?v=6"
   },
   "/player/11893/zywoo": {
     name: "ZywOo",
@@ -21,63 +21,63 @@ const playerInfo = {
   },
   "/player/17306/degster": {
     name: "degster",
-    image: ""
+    image: "https://static.hltv.org/images/playerprofile/thumb/17306/800.jpeg?v=1"
   },
   "/player/11816/ropz": {
     name: "ropz",
-    image: "https://liquipedia.net/commons/images/e/e3/Ropz_%40_EPL_S10.jpg"
+    image: "https://static.hltv.org/images/playerprofile/thumb/11816/800.jpeg?v=9"
   },
   "/player/19512/nivera": {
     name: "Nivera",
-    image: ""
+    image: "https://img-cdn.hltv.org/playerbodyshot/H-9-CzvFHUHENGpHdPhqDT.png?bg=3e4c54&h=800&ixlib=java-2.1.0&rect=113%2C8%2C474%2C474&w=800&s=d1b3156bff146d12bc2636bc60adcc5f"
   },
   "/player/15165/blamef": {
     name: "blameF",
-    image: "https://liquipedia.net/commons/images/5/51/BlameF_%40_DHO_Anaheim_2020.jpg"
+    image: "https://static.hltv.org/images/playerprofile/thumb/15165/800.jpeg?v=2"
   },
   "/player/11140/ins": {
     name: "INS",
-    image: "https://liquipedia.net/commons/images/b/b6/INS_%40_IEM_Katowice_2020.jpg"
+    image: "https://img-cdn.hltv.org/gallerypicture/gYH4C1anRt1Peoa89jrQSd.jpg?ixlib=java-2.1.0&w=500&s=29b0cb5ce30b8d71f8ff5d3c505857d3"
   },
   "/player/13670/nawwk": {
     name: "nawwk",
-    image: "https://liquipedia.net/commons/images/e/e3/Nawwk_%40_IEM_Katowice_2020.jpg"
+    image: "https://img-cdn.hltv.org/playerbodyshot/CImH0d3KvkyXuqiY_ZfgRO.png?ixlib=java-2.1.0&w=400&s=8175e2f175cdc8d8617b3795bc3420d1"
   },
   "/player/12018/teses": {
     name: "TeSeS",
-    image: "https://liquipedia.net/commons/images/c/c9/TeSeS_DreamHack_Summer_2019.jpg"
+    image: "https://static.hltv.org/images/playerprofile/thumb/12018/800.jpeg?v=1"
   },
   "/player/695/allu": {
     name: "allu",
-    image: "https://liquipedia.net/commons/images/9/97/ENCE_allu_2021.png"
+    image: "http://static.hltv.org/images/galleries/6509-medium/1424014095.7522.jpeg"
   },
   "/player/7938/xantares": {
     name: "XANTARES",
-    image: "https://liquipedia.net/commons/images/3/3a/XANTARES_at_Dreamhack_Open_Leipzig_2020.jpg"
+    image: "https://static.hltv.org/images/playerprofile/thumb/7938/800.jpeg?v=3"
   },
   "/player/3849/jw": {
     name: "JW",
-    image: "https://liquipedia.net/commons/images/1/1c/JW_%40_IEM_Katowice_2020.jpg"
+    image: "https://static.hltv.org/images/playerprofile/thumb/3849/800.jpeg?v=9"
   },
   "/player/8576/zoree": {
     name: "ZOREE",
-    image: "https://liquipedia.net/commons/images/c/c6/HAVU_ZOREE_2021.png"
+    image: "https://img-cdn.hltv.org/playerbodyshot/KrOaycSg-CnvNvwALg3Laz.png?bg=3e4c54&h=800&ixlib=java-2.1.0&rect=128%2C4%2C439%2C439&w=800&s=fa29e0d2d7ab6c264e3689e54ddd1f19"
   },
   "/player/15631/kscerato": {
     name: "KSCERATO",
-    image: "https://liquipedia.net/commons/images/d/d2/FURIA_KSCERATO_2021.png"
+    image: "https://static.hltv.org/images/playerprofile/thumb/15631/800.jpeg?v=4"
   },
   "/player/18053/broky": {
     name: "broky",
-    image: "https://liquipedia.net/commons/images/b/b9/Broky_%40_IEM_Katowice_2020.jpg"
+    image: "https://static.hltv.org/images/galleries/11736-medium/1555691590.3836.jpeg"
   },
   "/player/7208/smn": {
     name: "smn",
-    image: "https://liquipedia.net/commons/images/f/f1/Smn_at_DreamHack_Invitational_II.jpg"
+    image: "http://static.hltv.org/images/galleries/6176-medium/1411638657.487.jpeg"
   },
   "/player/12553/yuurih": {
     name: "yuurih",
-    image: "https://liquipedia.net/commons/images/0/02/FURIA_yuurih_2021.png"
+    image: "https://img-cdn.hltv.org/playerbodyshot/CTo2ejsWzUsSZRlddsHzsL.png?ixlib=java-2.1.0&w=400&s=c481af131bc878fa3181dd67a41323ec"
   },
   "/player/13300/farlig": {
     name: "farlig",
@@ -85,83 +85,83 @@ const playerInfo = {
   },
   "/player/10994/stavn": {
     name: "stavn",
-    image: "https://liquipedia.net/commons/images/d/de/Stavn_at_Dreamhack_Open_Leipzig_2020.jpg"
+    image: "https://img-cdn.hltv.org/playerbodyshot/ebX1nyC7pzo5bLwDtkmabc.png?bg=3e4c54&h=800&ixlib=java-2.1.0&rect=124%2C16%2C482%2C482&w=800&s=536701164a00aa5419fb7983d73cf7a5"
   },
   "/player/1225/shox": {
     name: "shox",
-    image: "https://liquipedia.net/commons/images/f/f8/Shox_%40_IEM_Katowice_2020.jpg"
+    image: "https://upload.wikimedia.org/wikipedia/commons/e/ef/Shox_in_2018.png"
   },
   "/player/9031/valde": {
     name: "valde",
-    image: "https://liquipedia.net/commons/images/c/c0/OG_valde_2019.png"
+    image: "https://img-cdn.hltv.org/gallerypicture/U3Un1jc7rCcHDckOmiDQG_.jpg?ixlib=java-2.1.0&w=800&s=6ee6faade8ae9b1e5e58a80afec19aa1"
   },
   "/player/11942/buster": {
     name: "buster",
-    image: "https://liquipedia.net/commons/images/4/44/Buster_%40_DHDE20.jpg"
+    image: "https://img-cdn.hltv.org/playerbodyshot/-Y1xbB3zPGFWArTjRZPRGb.png?ixlib=java-2.1.0&w=400&s=984618c6394a97d3152468e9ab28a2ab"
   },
   "/player/3741/niko": {
     name: "NiKo",
-    image: "https://liquipedia.net/commons/images/9/94/NiKo_%40_IEM_Katowice_2020.jpg"
+    image: "https://static.hltv.org/images/playerprofile/thumb/3741/800.jpeg?v=8"
   },
   "/player/8528/hobbit": {
     name: "Hobbit",
-    image: "https://liquipedia.net/commons/images/a/ac/Gambit_Hobbit_2021.png"
+    image: "https://img-cdn.hltv.org/playerbodyshot/H3Ll7IgXMF4gKtv62yhk5i.png?bg=3e4c54&h=800&ixlib=java-2.1.0&rect=132%2C19%2C467%2C467&w=800&s=127089690297c68c770cc03b9883b034"
   },
   "/player/13776/jame": {
     name: "Jame",
-    image: "https://liquipedia.net/commons/images/2/2f/Jame_VP_Epicenter_2019.jpeg"
+    image: "https://static.hltv.org/images/playerprofile/thumb/13776/800.jpeg?v=4"
   },
   "/player/13281/el1an": {
     name: "El1an",
-    image: "https://liquipedia.net/commons/images/3/30/Elian_epg.jpg"
+    image: "https://img-cdn.hltv.org/playerbodyshot/QbF3IIovTBfkpaXRyNqc3S.png?bg=3e4c54&h=800&ixlib=java-2.1.0&rect=136%2C0%2C420%2C420&w=800&s=fd82351c918f924f9cbf775829207906"
   },
   "/player/13982/forester": {
     name: "Forester",
-    image: "https://liquipedia.net/commons/images/2/20/Forester_at_Champions_Cup_Finals.jpg"
+    image: "https://img-cdn.hltv.org/playerbodyshot/YIW31pQ03gBHdc-MlaI0lL.png?bg=3e4c54&h=800&ixlib=java-2.1.0&rect=128%2C4%2C439%2C439&w=800&s=76c2d54ba6971abcb617ee86259578c5"
   },
   "/player/19230/m0nesy": {
     name: "m0NESY",
-    image: "https://liquipedia.net/commons/images/9/9a/M0NESY.jpg"
+    image: "https://img-cdn.hltv.org/gallerypicture/ardGKlSTAVYUtT_SXSNYSV.jpg?bg=3e4c54&h=800&ixlib=java-2.1.0&rect=325%2C569%2C3254%2C3254&w=800&s=1d03aac535d52f316f2699b1e68a42d5"
   },
   "/player/11271/smooya": {
     name: "Smooya",
-    image: "https://liquipedia.net/commons/images/4/4c/Smooya_%40_CCF.jpg"
+    image: "https://img-cdn.hltv.org/gallerypicture/kbXDgSPii4Kl8mGXbJBbz6.jpg?ixlib=java-2.1.0&w=800&s=0d8406bc173fea758e6f44c011ed1b78"
   },
   "/player/8520/naf": {
     name: "NAF",
-    image: "https://liquipedia.net/commons/images/9/9e/TL_NAF_2021.png"
+    image: "https://static.hltv.org/images/playerprofile/thumb/8520/800.jpeg?v=8"
   },
   "/player/14148/sjuush": {
     name: "sjuush",
-    image: "https://liquipedia.net/commons/images/d/df/Sjuush_%40_IEM_Katowice_2020.jpg"
+    image: "https://img-cdn.hltv.org/playerbodyshot/INUMco22wlcqAItfg-71jP.png?ixlib=java-2.1.0&w=400&s=8f21178435a5f30a34ccc12dbc27aaf5"
   },
   "/player/16555/ax1le": {
     name: "Ax1Le",
-    image: "https://liquipedia.net/commons/images/a/ad/Gambit_Ax1Le_2021.png"
+    image: "https://img-cdn.hltv.org/playerbodyshot/_5vJK-fn83yXbOOV2S6cjG.png?bg=3e4c54&h=800&ixlib=java-2.1.0&rect=147%2C40%2C400%2C400&w=800&s=e37416a821d53c3fa958691a0809eb85"
   },
   "/player/10610/refrezh": {
     name: "refrezh",
-    image: "https://liquipedia.net/commons/images/1/1b/Refrezh_DHS19.jpg"
+    image: "https://static.hltv.org/images/playerprofile/thumb/10610/800.jpeg?v=11"
   },
   "/player/13249/osee": {
     name: "oSee",
-    image: "https://liquipedia.net/commons/images/1/17/ES_oSee_Apr2021.png"
+    image: "https://img-cdn.hltv.org/playerbodyshot/vsswBzD-TymFpP-MYFCZiR.png?bg=3e4c54&h=800&ixlib=java-2.1.0&rect=124%2C0%2C455%2C455&w=800&s=30eff723b896416374e940c9ea28a534"
   },
   "/player/3972/hunter": {
     name: "huNter-",
-    image: "https://liquipedia.net/commons/images/f/fd/HuNter-_%40_IEM_Katowice_2020.jpg"
+    image: "https://img-cdn.hltv.org/playerbodyshot/mKiTcXXfqNk0Xnc7nGqRHD.png?bg=3e4c54&h=800&ixlib=java-2.1.0&rect=144%2C0%2C416%2C416&w=800&s=4464b3a2e261ba303e8394b948d0ec15"
   },
   "/player/10394/twistzz": {
     name: "Twistzz",
-    image: "https://liquipedia.net/commons/images/d/d8/Twistzz_%40_ESL_NY_2019.jpg"
+    image: "https://static.hltv.org/images/playerprofile/thumb/10394/400.jpeg?v=13"
   },
   "/player/8918/electronic": {
     name: "electronic",
-    image: "https://liquipedia.net/commons/images/2/26/Electronic_%40_IEM_Katowice_2020.jpg"
+    image: "https://static.hltv.org/images/playerprofile/thumb/8918/400.jpeg?v=6"
   },
   "/player/9216/coldzera": {
     name: "coldzera",
-    image: "https://liquipedia.net/commons/images/b/bd/Coldzera_%40_IEM_Katowice_2020.jpg"
+    image: "https://static.hltv.org/images/playerprofile/thumb/9216/800.jpeg?v=6"
   },
   "/player/2757/guardian": {
     name: "GuardiaN",
@@ -169,87 +169,95 @@ const playerInfo = {
   },
   "/player/885/olofmeister": {
     name: "olofmeister",
-    image: "https://liquipedia.net/commons/images/8/86/Olofmeister_%40_IEM_Katowice_2020.jpg"
+    image: "https://static.hltv.org/images/playerprofile/thumb/885/800.jpeg?v=5"
   },
   "/player/7528/krimz": {
     name: "KRIMZ",
-    image: "https://liquipedia.net/commons/images/4/4c/KRIMZ_%40_IEM_Katowice_2020.jpg"
+    image: "https://static.hltv.org/images/playerprofile/thumb/7528/800.jpeg?v=4"
   },
   "/player/7440/skadoodle": {
     name: "Skadoodle",
-    image: "https://liquipedia.net/commons/images/5/58/Skadoodle_at_StarLadder_i-League_StarSeries_S4.jpg"
+    image: "https://static.hltv.org/images/playerprofile/thumb/7440/800.jpeg?v=8"
   },
   "/player/3055/flusha": {
     name: "flusha",
-    image: "https://liquipedia.net/commons/images/2/29/Flusha_%40_EPL_S10_Finals.jpg"
+    image: "https://static.hltv.org/images/playerprofile/thumb/3055/800.jpeg?v=4"
   },
   "/player/9032/magisk": {
     name: "Magisk",
-    image: "https://liquipedia.net/commons/images/6/67/Magisk_%40_IEM_Katowice_2020.jpg"
+    image: "https://static.hltv.org/images/playerprofile/thumb/9032/800.jpeg?v=11"
   },
   "/player/8738/elige": {
     name: "EliGE",
-    image: "https://liquipedia.net/commons/images/a/a3/TL_EliGE_2021.png"
+    image: "https://static.hltv.org/images/playerprofile/thumb/8738/800.jpeg?v=5"
   },
   "/player/7167/kennys": {
     name: "kennyS",
-    image: "https://liquipedia.net/commons/images/0/0a/KennyS_%40_IEM_Katowice_2020.jpg"
+    image: "https://static.hltv.org/images/playerprofile/thumb/7167/800.jpeg?v=6"
   },
   "/player/8735/autimatic": {
     name: "autimatic",
-    image: "https://liquipedia.net/commons/images/f/fb/Autimatic_DHO_Anaheim_2020.jpg"
+    image: "https://img-cdn.hltv.org/playerbodyshot/AzlEZTCCL0fy5_fe2NY1zI.png?ixlib=java-2.1.0&w=400&s=049de4803b82905f51471f471fd37898"
   },
   "/player/8783/jugi": {
     name: "JUGi",
-    image: "https://liquipedia.net/commons/images/a/a4/JUGi_%40_DHSEV19.jpg"
+    image: "https://static.hltv.org/images/playerprofile/thumb/8783/800.jpeg?v=8"
   },
   "/player/4954/xyp9x": {
     name: "Xyp9x",
-    image: "https://liquipedia.net/commons/images/2/24/Xyp9x_%40_IEM_Katowice_2020.jpg"
+    image: "https://static.hltv.org/images/playerprofile/thumb/4954/800.jpeg?v=7"
   },
   "/player/7398/dupreeh": {
     name: "dupreeh",
-    image: "https://liquipedia.net/commons/images/a/a0/Dupreeh_%40_IEM_Katowice_2020.jpg"
+    image: "https://img-cdn.hltv.org/playerbodyshot/SLwrY1gme8Z3qXsWvWMDUb.png?ixlib=java-2.1.0&w=400&s=5629cfe360675c87106d401fde070e15"
   },
   "/player/12733/xsepower": {
     name: "xsepower",
-    image: "https://liquipedia.net/commons/images/7/79/Xsepower_%40_DHANA20.jpg"
+    image: "https://img-cdn.hltv.org/playerbodyshot/63oTMqDp_qU4b7AbkUHfpd.png?bg=3e4c54&h=800&ixlib=java-2.1.0&rect=132%2C23%2C443%2C443&w=800&s=f191c4ca0546fb116f6600120f578c84"
   },
   "/player/11276/marko": {
     name: "Markoś",
-    image:  ""
+    image:  "https://static.hltv.org/images/playerprofile/thumb/11276/800.jpeg?v=3"
   },
   "/player/9960/frozen": {
     name: "frozen",
-    image: "https://liquipedia.net/commons/images/4/48/Frozen_%40_IEM_Katowice_2020.jpg"
+    image: "https://static.hltv.org/images/playerprofile/thumb/9960/800.jpeg?v=16"
   },
   "/player/8412/dream3r": {
     name: "dream3r",
-    image: "https://liquipedia.net/commons/images/6/61/Dream3r.jpg"
+    image: "https://img-cdn.hltv.org/playerbodyshot/Imu2Z3xl9cQa__SGByLPpL.png?ixlib=java-2.1.0&w=400&s=dd37988181e91a56901b9d1adfc19b13"
   },
   "/player/11996/daffu": {
     name: "Daffu",
-    image: "https://liquipedia.net/commons/images/c/c2/Daffu_at_Leo_Vegas_Open.png"
+    image: "https://img-cdn.hltv.org/playerbodyshot/MCE0igVKny3YOwjfuRJYsQ.png?bg=3e4c54&h=800&ixlib=java-2.1.0&rect=124%2C16%2C474%2C474&w=800&s=8e09a79b1b855adb8fae748d7c497fe3"
   },
   "/player/10981/mantuu": {
     name: "mantuu",
-    image: "https://liquipedia.net/commons/images/4/48/OG_mantuu_2021.jpg"
+    image: "https://static.hltv.org/images/playerprofile/thumb/10981/800.jpeg?v=3"
   },
   "/player/20097/h4rn": {
     name: "h4rn",
-    image: "https://liquipedia.net/commons/images/a/a6/H4rn_at_BGE_Stara_Zagora.png"
+    image: "https://img-cdn.hltv.org/playerbodyshot/IyIHm1sWogUcyjWW8TUcGM.png?ixlib=java-2.1.0&w=400&s=0d5a7d908d734c47abce75f52dabe040"
   },
   "/player/18462/mezii": {
     name: "mezii",
-    image: ""
+    image: "https://img-cdn.hltv.org/playerbodyshot/U3jMS1CnX9RVhgFphqGJRj.png?bg=3e4c54&h=800&ixlib=java-2.1.0&rect=124%2C12%2C451%2C451&w=800&s=d61e324ee130e67d3f99c2bc8c2af940"
   },
   "/player/7964/cadian": {
     name: "cadiaN",
-    image: "https://liquipedia.net/commons/images/8/82/CadiaN_%40_DHDE20.jpg"
+    image: "https://static.hltv.org/images/playerprofile/bodyshot/compressed/7964.png"
   },
   "/player/13466/dennyslaw": {
     name: "dennyslaw",
-    image: "https://liquipedia.net/commons/images/c/ca/Dennyslaw_at_BGE_Stara_Zagora.png"
+    image: "https://img-cdn.hltv.org/playerbodyshot/9RwSkiuCxm7DjfvjEFPfEc.png?bg=3e4c54&h=800&ixlib=java-2.1.0&rect=140%2C12%2C443%2C443&w=800&s=687582beb72ee537249bb4433658668d"
+  },
+  "/player/18227/sensei": {
+    name: "SENSEi",
+    image: "https://img-cdn.hltv.org/playerbodyshot/YPL6OPSR5R_XacuAmRWSSD.png?bg=3e4c54&h=800&ixlib=java-2.1.0&rect=121%2C12%2C482%2C482&w=800&s=17cf3083d816337d127cbdb73936abaa"
+  },
+  "/player/8248/jkaem": {
+    name: "jkaem",
+    image: "https://img-cdn.hltv.org/playerbodyshot/qpPsGjOUThlg_vnGCjZg4c.png?bg=3e4c54&h=800&ixlib=java-2.1.0&rect=140%2C19%2C439%2C439&w=800&s=e3c2365462065435944fcd6727dcbb1a"
   }
 }
 

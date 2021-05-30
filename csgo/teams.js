@@ -182,6 +182,10 @@ const teamInfo = {
   "/team/8068/ago": {
     name: "AGO",
     image: "https://pbs.twimg.com/profile_images/1324335783063543808/FCjOgbyW_400x400.jpg"
+  },
+  "/team/5422/dignitas": {
+    name: "Dignitas",
+    image: "https://upload.wikimedia.org/wikipedia/en/c/c3/Dignitas_logo.svg"
   }
 }
 
