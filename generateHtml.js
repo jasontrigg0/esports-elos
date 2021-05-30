@@ -53,7 +53,7 @@ function generateHtml(gameInfo) {
 
   const tabHtml = generateTabRow(tabInfo);
 
-  let headerHtml = '<h2 style="padding-top: 10px; text-align: center">CS:GO Elo Ratings</h2><div style="text-align: center">Data from <a href="https://hltv.org">hltv.org</a>.</div>\n';
+  let headerHtml = `<h2 style="padding-top: 10px; text-align: center">CS:GO Elo Ratings</h2><div style="text-align: center; padding-bottom: 20px;">Data and images from <a href="https://hltv.org">hltv.org</a>. Last updated ${moment().format("h:mm a, MMMM Do, YYYY")} ET.</div>\n`;
 
   let cardHtml = '';
   for (let game in gameInfo) {
