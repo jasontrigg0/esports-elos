@@ -87,7 +87,7 @@ def get_stats_info(soup):
     return stats_info
 
 def get_match_list():
-    match_file = "/tmp/match_info.csv"
+    match_file = "/tmp/csgo_match_info.csv"
     first_run = not os.path.exists(match_file)
     existing_matches = [] if first_run else [r["match"] for r in csv.DictReader(open(match_file))]
 
@@ -98,10 +98,10 @@ def get_match_list():
     match_writer = csv.DictWriter(open(match_file,"a"),fieldnames=match_fields)
 
     sides_fields = ["match", "map", "overtime", "team0", "side0", "score0", "team1", "side1", "score1"]
-    sides_writer = csv.DictWriter(open("/tmp/sides_info.csv","a"),fieldnames=sides_fields)
+    sides_writer = csv.DictWriter(open("/tmp/csgo_sides_info.csv","a"),fieldnames=sides_fields)
 
     stats_fields = ["match", "map", "overtime", "team", "side", "player", "kills", "deaths", "adr", "kast", "rating"]
-    stats_writer = csv.DictWriter(open("/tmp/stats_info.csv","a"),fieldnames=stats_fields)
+    stats_writer = csv.DictWriter(open("/tmp/csgo_stats_info.csv","a"),fieldnames=stats_fields)
 
     if first_run:
         match_writer.writeheader()
