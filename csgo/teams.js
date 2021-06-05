@@ -186,6 +186,10 @@ const teamInfo = {
   "/team/5422/dignitas": {
     name: "Dignitas",
     image: "https://upload.wikimedia.org/wikipedia/en/c/c3/Dignitas_logo.svg"
+  },
+  "/team/9928/gamerlegion": {
+    name: "GamerLegion",
+    image: "https://pbs.twimg.com/profile_images/1346093368208666625/69-gnSP__400x400.jpg"
   }
 }
 

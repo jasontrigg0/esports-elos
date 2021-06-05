@@ -258,6 +258,30 @@ const playerInfo = {
   "/player/8248/jkaem": {
     name: "jkaem",
     image: "https://img-cdn.hltv.org/playerbodyshot/qpPsGjOUThlg_vnGCjZg4c.png?bg=3e4c54&h=800&ixlib=java-2.1.0&rect=140%2C19%2C439%2C439&w=800&s=e3c2365462065435944fcd6727dcbb1a"
+  },
+  "/player/18835/saffee": {
+    name: "saffee",
+    image: "https://img-cdn.hltv.org/playerbodyshot/UMtkaNbvx8GLdFiTzhk5zT.png?ixlib=java-2.1.0&w=400&s=d70980af68ba0921d06576ae391dbd5e"
+  },
+  "/player/16848/hades": {
+    name: "hades",
+    image: "https://img-cdn.hltv.org/playerbodyshot/83fGA1tR5b2Exj4OXHMWAS.png?ixlib=java-2.1.0&w=400&s=69bb909736f673cee44936f31e261b12"
+  },
+  "/player/12126/poizon": {
+    name: "poizon",
+    image: "https://img-cdn.hltv.org/playerbodyshot/0-GAjvwH_ubpOSDUTHM4Qs.png?ixlib=java-2.1.0&w=400&s=6274cdd3d85ff4f848bccf8b63aee573"
+  },
+  "/player/8565/hen1": {
+    name: "HEN1",
+    image: "https://img-cdn.hltv.org/playerbodyshot/EzvijKP3ouqz8NGwajAZhw.png?ixlib=java-2.1.0&w=400&s=17d5233ee597fd0d03afb4fa59bbd1ad"
+  },
+  "/player/798/oskar": {
+    name: "oskar",
+    image: "https://img-cdn.hltv.org/playerbodyshot/OenkR8BvNQmR_VhFiStvkP.png?ixlib=java-2.1.0&w=400&s=34c84b61ecf2d20d1aee979186e5664b"
+  },
+  "/player/8574/woxic": {
+    name: "woxic",
+    image: "https://img-cdn.hltv.org/playerbodyshot/iBaDcTTxzaitqkTlKcCGs0.png?ixlib=java-2.1.0&w=400&s=69853a603f1a29470c458e68371cd185"
   }
 }
 
