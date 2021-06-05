@@ -219,22 +219,28 @@ class EloCalculator:
             yn = np.sign(y0) * (800 / math.log(10)) * np.arctanh(10 ** (c/800) / ((10 ** (c/400) + 10 ** (self.k*x/800)) ** 0.5))
             self.performances[team] = yn + elo_perf
     def update_elos_all_matches(self, update_adj_elos=False, reverse=False):
-        total_err = 0
+        total_err = {
+            "team_err": 0,
+            "player_err": 0
+        }
         if not reverse:
             for match_info in self.all_match_info:
                 basic_info = match_info["basic_info"]
                 team_to_info = match_info["team_to_info"]
-                match_err = self.update_elos_from_match(basic_info, team_to_info, update_adj_elos)
-                total_err += match_err
+                err = self.update_elos_from_match(basic_info, team_to_info, update_adj_elos)
+                total_err["team_err"] += err.get("team_err",0)
+                total_err["player_err"] += err.get("player_err",0)
         else:
             for match_info in self.all_match_info[::-1]:
                 basic_info = match_info["basic_info"]
                 team_to_info = match_info["team_to_info"]
-                match_err = self.update_elos_from_match(basic_info, team_to_info, update_adj_elos)
-                total_err += match_err
+                err = self.update_elos_from_match(basic_info, team_to_info, update_adj_elos)
+                total_err["team_err"] += err.get("team_err",0)
+                total_err["player_err"] += err.get("player_err",0)
         return total_err
     def update_elos_from_match(self, basic_info, team_to_info, update_adj_elos = False, record_performance = False, update_leaderboard = False):
-        err = 0
+        team_err = None
+        player_err = None
         updates = [{
             "update_elo": self.ml_elos,
             "baseline_elo": self.ml_elos,
@@ -269,10 +275,12 @@ class EloCalculator:
                 #otherwise report on the error from using the ml elos
                 if i == (len(updates)-1) and j == 0:
                     #print(",".join([str(x) for x in [team,opp_team,update_elo["team"][team],baseline_elo["team"][opp_team],outcome,expected,delta]]))
-                    err += delta**2
+                    team_err = delta**2
                 u["team_to_perf"][team] = delta
 
-                self.update_player_elos(update_elo, basic_info, team_to_info)
+                if "player" in self.adj_elos and i == (len(updates)-1) and j == 0:
+                    player_err = self.update_player_elos(update_elo, basic_info, team_to_info)
+
 
                 if record_performance:
                     update_elo["recent_matches"].setdefault(team,[])
@@ -283,12 +291,12 @@ class EloCalculator:
                         "opp_score": 1 - outcome,
                         "opp": opp_team,
                         "yyyymmdd": basic_info["yyyymmdd"],
-                        "url": basic_info["url"]
+                        "url": basic_info.get("url",None)
                     }
                     if "player" in self.adj_elos:
                         for player in self.get_players(team_to_info):
                             update_elo["player_last_match"][player] = {
-                                "url": basic_info["url"],
+                                "url": basic_info.get("url",None),
                                 "yyyymmdd": basic_info["yyyymmdd"],
                             }
 
@@ -317,6 +325,9 @@ class EloCalculator:
                             "last": update_elo["team_last_match"][team]
                         }
                         self.update_alltime(self.alltime_player_top_25, player_info, 10**9)
+        err = { "team_err": team_err }
+        if player_err:
+            err["player_err"] = player_err
         return err
 
 def compute_expected_raw(elo_diff):

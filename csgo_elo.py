@@ -82,7 +82,8 @@ class CsGoEloCalculator(EloCalculator):
         #or did they just execute better on the non-kda portion of the game?
         #for now take the round share as ground truth. Could test this by seeing if you improve predictive
         #power by including the kda info
-        TEAM_FACTOR_CONSTANT = 0.2
+        total_player_err = 0
+        TEAM_FACTOR_CONSTANT = 0.4
         for team in team_to_info:
             stats = team_to_info[team]["stats"]
             round_cnt = basic_info["total_score"]
@@ -105,8 +106,10 @@ class CsGoEloCalculator(EloCalculator):
                 adjusted_pseudo_round_share = min(max(adjusted_pseudo_round_share,0),1)
                 expected_pseudo_round_share = compute_expected_raw(elos["player"][player]-elos["team"][team])
                 delta = (adjusted_pseudo_round_share - expected_pseudo_round_share)
+                total_player_err += delta**2
                 elos["player"][player] += self.player_k * round_cnt * delta
                 #error["player"] += round_cnt * abs(adjusted_pseudo_round_share - expected_pseudo_round_share)
+        return total_player_err
     def shrink_adj_elos(self):
         elos = self.adj_elos
         for team in elos["team"]:
