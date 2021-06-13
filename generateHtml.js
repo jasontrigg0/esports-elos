@@ -238,6 +238,10 @@ async function main() {
   }
 
   const gameInfo = {
+    lol: {
+      teams: lol_teams,
+      alltime_teams: lol_alltime_teams
+    },
     csgo: {
       teams: csgo_teams,
       players: csgo_players
@@ -246,10 +250,6 @@ async function main() {
       teams: csgo_alltime_teams,
       players: csgo_alltime_players
     },
-    lol: {
-      teams: lol_teams,
-      alltime_teams: lol_alltime_teams
-    }
   };
 
   const html = generateHtml(gameInfo);
