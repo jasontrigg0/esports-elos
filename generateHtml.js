@@ -1,8 +1,20 @@
 const { sortArray,readCsvFiles } = require("./csgo/util.js");
-const { teamInfo } = require("./csgo/teams.js");
-const { playerInfo } = require("./csgo/players.js");
+const { csgoTeamInfo } = require("./csgo/teams.js");
+const { csgoPlayerInfo } = require("./csgo/players.js");
+const { lolTeamInfo } = require("./lol/teams.js");
 moment = require('moment');
 fs = require('fs');
+
+const teamInfo = {
+  csgo: csgoTeamInfo,
+  csgo_alltime: csgoTeamInfo,
+  lol: lolTeamInfo
+};
+
+const playerInfo = {
+  csgo: csgoPlayerInfo,
+  csgo_alltime: csgoPlayerInfo
+}
 
 function generateTabRow(tabInfo) {
   const START = `
@@ -39,27 +51,49 @@ function generateTabRow(tabInfo) {
 }
 
 function generateHtml(gameInfo) {
+  const now = moment().format("h:mm a, MMMM Do, YYYY");
+
   const tabInfo = {
+    lol: {
+      label: "LoL",
+      icon: "calendar_today",
+      title: "League of Legends",
+      detail: `Data from <a href="https://gamepedia.com">gamepedia.com</a>. Last updated ${now} ET.`,
+      active: true
+    },
     csgo: {
       label: "CS:GO live",
       icon: "trending_up",
-      active: true
+      title: "CS:GO Elo Ratings",
+      detail: `Data and images from <a href="https://hltv.org">hltv.org</a>. Last updated ${now} ET.`,
     },
     csgo_alltime: {
       label: "CS:GO all-time",
       icon: "calendar_today",
+      title: "CS:GO Elo Ratings",
+      detail: `Data and images from <a href="https://hltv.org">hltv.org</a>. Last updated ${now} ET.`,
     },
   };
 
   const tabHtml = generateTabRow(tabInfo);
 
-  let headerHtml = `<h2 style="padding-top: 10px; text-align: center">CS:GO Elo Ratings</h2><div style="text-align: center; padding-bottom: 20px;">Data and images from <a href="https://hltv.org">hltv.org</a>. Last updated ${moment().format("h:mm a, MMMM Do, YYYY")} ET.</div>\n`;
-
   let cardHtml = '';
   for (let game in gameInfo) {
-    cardHtml += `<div style="margin-top: 25px; flex-direction: row; justify-content: space-around" class="tab-panel ${tabInfo[game]["active"] ? "active" : ""}">`;
-    cardHtml += generateCards("Teams", gameInfo[game]["teams"], row => teamInfo[row["team"]]);
-    cardHtml += generateCards("Players", gameInfo[game]["players"], row => playerInfo[row["player"]]);
+    //tab-panel
+    cardHtml += `<div style="margin-top: 25px; flex-direction: column; justify-content: space-around" class="tab-panel ${tabInfo[game]["active"] ? "active" : ""}">`;
+    //header
+    cardHtml += `<div><h2 style="padding-top: 10px; text-align: center">${tabInfo[game]["title"]}</h2><div style="text-align: center; padding-bottom: 20px;">${tabInfo[game]["detail"]}</div></div>\n`;
+    //cards
+    cardHtml += `<div style="display: flex; margin-top: 25px; flex-direction: row; justify-content: space-around">`;
+    console.log(game);
+    if (game === "lol") {
+      cardHtml += generateCards("Live", gameInfo[game]["teams"], row => teamInfo[game][row["team"]]);
+      cardHtml += generateCards("All Time", gameInfo[game]["alltime_teams"], row => teamInfo[game][row["team"]]);
+    } else {
+      cardHtml += generateCards("Teams", gameInfo[game]["teams"], row => teamInfo[game][row["team"]]);
+      cardHtml += generateCards("Players", gameInfo[game]["players"], row => playerInfo[game][row["player"]]);
+    }
+    cardHtml += '</div>';
     cardHtml += '</div>';
   }
 
@@ -98,7 +132,7 @@ function generateHtml(gameInfo) {
            }
 
            // Show the current one.
-           let tab = document.querySelector(".tab-panel:nth-child(" + (index + 4) + ")")
+           let tab = document.querySelector(".tab-panel:nth-child(" + (index + 2) + ")")
            tab.classList.add("active")
          })
        }
@@ -108,7 +142,7 @@ function generateHtml(gameInfo) {
 </html>
   `;
 
-  return HTML_HEADER + tabHtml + headerHtml + cardHtml + HTML_FOOTER;
+  return HTML_HEADER + tabHtml + cardHtml + HTML_FOOTER;
 }
 
 function generateCard(image, header1, header2, header3, header4) {
@@ -161,43 +195,60 @@ function generateCards(title, info, fn) {
 }
 
 async function main() {
-  let teams = [];
-  for await (let row of readCsvFiles(['/tmp/teams.csv'])) {
+  let csgo_teams = [];
+  for await (let row of readCsvFiles(['/tmp/csgo_teams.csv'])) {
     if (row["team"] === "/team/5752/cloud9" && row["detail"] === '<a href="https://hltv.org/matches/2346948/cloud9-vs-mibr-esl-pro-league-season-13">Last match</a>') {
       continue;
     }
     if (row["team"] === "/team/7733/mibr-1") {
       continue;
     }
-    teams.push(row);
+    csgo_teams.push(row);
   }
 
-  let players = [];
-  for await (let row of readCsvFiles(['/tmp/players.csv'])) {
-    players.push(row);
+  let csgo_players = [];
+  for await (let row of readCsvFiles(['/tmp/csgo_players.csv'])) {
+    csgo_players.push(row);
   }
 
-  let alltime_teams = [];
-  for await (let row of readCsvFiles(['/tmp/alltime_teams.csv'])) {
+  let csgo_alltime_teams = [];
+  for await (let row of readCsvFiles(['/tmp/csgo_alltime_teams.csv'])) {
     // if (row["team"] === "/team/7733/mibr-1") {
     //   continue;
     // }
-    alltime_teams.push(row);
+    csgo_alltime_teams.push(row);
   }
 
-  let alltime_players = [];
-  for await (let row of readCsvFiles(['/tmp/alltime_players.csv'])) {
-    alltime_players.push(row);
+  let csgo_alltime_players = [];
+  for await (let row of readCsvFiles(['/tmp/csgo_alltime_players.csv'])) {
+    csgo_alltime_players.push(row);
+  }
+
+  let lol_teams = [];
+  for await (let row of readCsvFiles(['/tmp/lol_teams.csv'])) {
+    if (row["team"] === "FunPlus Phoenix Blaze") {
+      continue;
+    }
+    lol_teams.push(row);
+  }
+
+  let lol_alltime_teams = [];
+  for await (let row of readCsvFiles(['/tmp/lol_alltime_teams.csv'])) {
+    lol_alltime_teams.push(row);
   }
 
   const gameInfo = {
     csgo: {
-      teams: teams,
-      players: players
+      teams: csgo_teams,
+      players: csgo_players
     },
     csgo_alltime: {
-      teams: alltime_teams,
-      players: alltime_players
+      teams: csgo_alltime_teams,
+      players: csgo_alltime_players
+    },
+    lol: {
+      teams: lol_teams,
+      alltime_teams: lol_alltime_teams
     }
   };
 

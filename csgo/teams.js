@@ -190,7 +190,11 @@ const teamInfo = {
   "/team/9928/gamerlegion": {
     name: "GamerLegion",
     image: "https://pbs.twimg.com/profile_images/1346093368208666625/69-gnSP__400x400.jpg"
+  },
+  "/team/7718/movistar-riders": {
+    name: "Movistar Riders",
+    image: "https://pbs.twimg.com/profile_images/1387800239126503429/jtNDdT85_400x400.jpg"
   }
 }
 
-exports.teamInfo = teamInfo;
+exports.csgoTeamInfo = teamInfo;

@@ -7,7 +7,8 @@ import numpy as np
 import math
 
 class EloCalculator:
-    def __init__(self, all_match_info, k=20, ml_iter=100, adj_iter=15):
+    def __init__(self, all_match_info, prefix="elo", k=20, ml_iter=100, adj_iter=15, has_wlt=True):
+        self.prefix = prefix
         self.k = k
         self.ml_iter = ml_iter
         self.adj_iter = adj_iter
@@ -25,6 +26,43 @@ class EloCalculator:
         self.alltime_player_top_25 = [] #top team performanc
 
         self.all_match_info = all_match_info
+
+        #f"<a href=\"{last['url']}\">Last match</a>"
+        #f"<a href=\"{last['url']}\">Last match</a>"
+
+        #f"Last: {wlt} vs <a href=\"{last['url']}\">{last['opp']}</a>"
+
+        #f"<a href=\"{x['last']['url']}\">{datetime.datetime.strptime(x['yyyymmdd'], '%Y%m%d').strftime('%B %d, %Y')}</a>"
+
+        #{datetime.datetime.strptime(last['yyyymmdd'], '%Y%m%d').strftime('%B %d, %Y')}</a>"
+
+        def detail_wlt(last):
+            wlt = "Win" if last["score"] > last["opp_score"] else ("Loss" if last["score"] < last["opp_score"] else "Tie")
+            if last.get("url",None):
+                return f"Last: {wlt} vs <a href=\"{last['url']}\">{last['opp']}</a>"
+            else:
+                return f"Last: {wlt} vs {last['opp']}"
+
+            return f"Last: {wlt} vs {last['opp']}"
+
+        def detail_last(last):
+            if last.get("url",None):
+                return f"<a href=\"{last['url']}\">Last match</a>"
+            else:
+                return f""
+
+        def detail_date(last):
+            if last.get("url",None):
+                return f"<a href=\"{last['url']}\">{datetime.datetime.strptime(last['yyyymmdd'], '%Y%m%d').strftime('%B %d, %Y')}</a>"
+            else:
+                return f"{datetime.datetime.strptime(last['yyyymmdd'], '%Y%m%d').strftime('%B %d, %Y')}"
+
+        if has_wlt:
+            self.live_detail_fn = detail_wlt
+            self.hist_detail_fn = detail_date
+        else:
+            self.live_detail_fn = detail_last
+            self.hist_detail_fn = detail_date
     def new_elos(self):
         return {
             "team": {},
@@ -83,7 +121,7 @@ class EloCalculator:
 
     def write_elos(self):
         sorted_adj_elos = sorted([(team, self.adj_elos["team"][team]) for team in self.adj_elos["team"]], key = lambda x: x[1])
-        team_writer = csv.DictWriter(open("/tmp/teams.csv","w"), fieldnames=["team","elo","detail"])
+        team_writer = csv.DictWriter(open(f"/tmp/{self.prefix}_teams.csv","w"), fieldnames=["team","elo","detail"])
         team_writer.writeheader()
         for x in [x for x in sorted_adj_elos if x[0] in self.performances][::-1][:50]:
             last = self.adj_elos["team_last_match"][x[0]]
@@ -91,39 +129,38 @@ class EloCalculator:
             team_writer.writerow({
                 "team": x[0],
                 "elo": round(x[1]),
-                "detail": f"<a href=\"{last['url']}\">Last match</a>" #f"Last: {wlt} vs <a href=\"{last['url']}\">{last['opp']}</a>"
+                "detail": self.live_detail_fn(last)
             })
 
-        alltime_team_writer = csv.DictWriter(open("/tmp/alltime_teams.csv","w"), fieldnames=["team","elo","detail"])
+        alltime_team_writer = csv.DictWriter(open(f"/tmp/{self.prefix}_alltime_teams.csv","w"), fieldnames=["team","elo","detail"])
         alltime_team_writer.writeheader()
         for x in self.alltime_team_top_25:
             alltime_team_writer.writerow({
                 "team": x["name"],
                 "elo": round(x["elo"]),
-                "detail": f"<a href=\"{x['last']['url']}\">{datetime.datetime.strptime(x['yyyymmdd'], '%Y%m%d').strftime('%B %d, %Y')}</a>"
+                "detail": self.hist_detail_fn(x["last"])
             })
         if "player" in self.adj_elos:
             sorted_player_elos = sorted([(player, self.adj_elos["player"][player]) for player in self.adj_elos["player"]], key = lambda x: x[1])
-            player_writer = csv.DictWriter(open("/tmp/players.csv","w"), fieldnames=["player","elo","detail"])
+            player_writer = csv.DictWriter(open(f"/tmp/{self.prefix}_players.csv","w"), fieldnames=["player","elo","detail"])
             player_writer.writeheader()
             print("player info")
             for x in sorted_player_elos[::-1][:25]:
                 last = self.adj_elos["player_last_match"][x[0]]
-                print(last)
                 player_writer.writerow({
                     "player":x[0],
                     "elo": round(x[1]),
-                    "detail": f"<a href=\"{last['url']}\">Last match</a>" #{datetime.datetime.strptime(last['yyyymmdd'], '%Y%m%d').strftime('%B %d, %Y')}</a>"
+                    "detail": self.live_detail_fn(last)
                 })
 
-            alltime_player_writer = csv.DictWriter(open("/tmp/alltime_players.csv","w"), fieldnames=["player","elo","detail"])
+            alltime_player_writer = csv.DictWriter(open(f"/tmp/{self.prefix}_alltime_players.csv","w"), fieldnames=["player","elo","detail"])
             alltime_player_writer.writeheader()
             for x in self.alltime_player_top_25:
                 print(x)
                 alltime_player_writer.writerow({
                     "player": x["name"],
                     "elo": round(x["elo"]),
-                    "detail": f"<a href=\"{x['last']['url']}\">{datetime.datetime.strptime(x['yyyymmdd'], '%Y%m%d').strftime('%B %d, %Y')}</a>"
+                    "detail": self.hist_detail_fn(x["last"])
                 })
 
 

@@ -1,0 +1,843 @@
+
+  <head>
+    <!-- Required styles for MDC Web -->
+    <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+    <link rel="stylesheet" href="mdc-demo-card.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <style>
+     .tab-panel {
+       display: none;
+     }
+     .tab-panel.active {
+       display: flex;
+     }
+    </style>
+  </head>
+  <body>
+  <h2 style="padding-top: 10px; text-align: center">CS:GO Elo Ratings</h2><div style="text-align: center">Data from <a href="https://hltv.org">hltv.org</a>.</div>
+<div style="margin-top: 40px; flex-direction: row; justify-content: space-around" class="tab-panel active">  <div style="max-width: 500px"><div style="text-align: center; padding-bottom: 10px">Current</div>
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://upload.wikimedia.org/wikipedia/commons/6/63/RNG_logo.svg"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#1 RNG</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">2722</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="None">Last match</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://upload.wikimedia.org/wikipedia/en/4/4b/DWG_KIA_logo.png"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#2 Damwon</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">2683</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="None">Last match</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://upload.wikimedia.org/wikipedia/commons/3/33/Edward_Gaming_logo.png"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#3 Edward Gaming</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">2633</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="None">Last match</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://upload.wikimedia.org/wikipedia/en/1/18/FPX_Esports_logo.png"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#4 FunPlus Phoenix</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">2633</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="None">Last match</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://upload.wikimedia.org/wikipedia/en/a/ac/Top_Esports_logo.png"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#5 Top Esports</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">2577</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="None">Last match</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://upload.wikimedia.org/wikipedia/en/7/77/Gen.G_Logo.svg"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#6 Gen.G</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">2573</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="None">Last match</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://upload.wikimedia.org/wikipedia/en/0/00/Suning_%28esports%29_logo.png"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#7 Suning</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">2571</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="None">Last match</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://upload.wikimedia.org/wikipedia/en/7/7d/JD_Gaming_logo.png"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#8 JD Gaming</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">2557</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="None">Last match</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://upload.wikimedia.org/wikipedia/en/7/7c/Talon_Esports_logo.png"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#9 PSG Talon</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">2548</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="None">Last match</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://upload.wikimedia.org/wikipedia/en/8/84/MAD_Lions_logo.svg"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#10 MAD Lions</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">2536</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="None">Last match</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://upload.wikimedia.org/wikipedia/en/4/46/T1_%28esports%29.png"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#11 T1</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">2513</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="None">Last match</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://upload.wikimedia.org/wikipedia/en/9/99/Hanwha_Life_Esports_logo.svg"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#12 Hanwha Life Esports</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">2464</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="None">Last match</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://upload.wikimedia.org/wikipedia/en/1/1f/Invictus_Gaming_logo.png"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#13 Invictus Gaming</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">2444</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="None">Last match</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src=""></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#14 Rare Atom</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">2435</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="None">Last match</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://upload.wikimedia.org/wikipedia/en/7/78/Team_WE_logo.png"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#15 Team WE</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">2417</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="None">Last match</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://upload.wikimedia.org/wikipedia/en/b/b5/Nongshim_RedForce_logo.png"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#16 Nongshim RedForce</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">2399</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="None">Last match</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://upload.wikimedia.org/wikipedia/en/a/af/Rogue_logo.svg"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#17 Rogue</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">2392</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="None">Last match</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://upload.wikimedia.org/wikipedia/en/f/f1/Team_Liquid_logo.svg"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#18 Team Liquid</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">2383</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="None">Last match</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://upload.wikimedia.org/wikipedia/commons/c/c7/TSM_Logo.svg"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#19 TSM</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">2382</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="None">Last match</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://upload.wikimedia.org/wikipedia/en/6/61/KT_Rolster_logo.png"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#20 KT Rolster</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">2367</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="None">Last match</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src=""></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#21 Afreeca Freecs</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">2362</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="None">Last match</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://upload.wikimedia.org/wikipedia/en/e/e3/Machi_Esports_logo.png"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#22 Machi Esports</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">2362</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="None">Last match</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://upload.wikimedia.org/wikipedia/commons/f/f7/Cloud9_logo.svg"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#23 Cloud9</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">2357</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="None">Last match</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://upload.wikimedia.org/wikipedia/en/0/00/GIGABYTE_Marines_logo.png"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#24 GAM Esports</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">2356</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="None">Last match</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://upload.wikimedia.org/wikipedia/en/1/12/Esports_organization_G2_Esports_logo.svg"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#25 G2 Esports</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">2347</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="None">Last match</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+  </div>  <div style="max-width: 500px"><div style="text-align: center; padding-bottom: 10px">All Time</div>
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://upload.wikimedia.org/wikipedia/en/4/4b/DWG_KIA_logo.png"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#1 Damwon</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">2836</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="None">December 23, 2020</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src=""></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#2 Griffin</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">2795</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="None">March 10, 2019</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://upload.wikimedia.org/wikipedia/en/4/46/T1_%28esports%29.png"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#3 T1</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">2774</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="None">April 13, 2019</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://upload.wikimedia.org/wikipedia/en/4/46/T1_%28esports%29.png"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#4 T1</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">2767</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="None">October 19, 2019</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://upload.wikimedia.org/wikipedia/en/4/46/T1_%28esports%29.png"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#5 T1</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">2766</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="None">October 31, 2015</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://upload.wikimedia.org/wikipedia/en/c/c4/Samsung_Galaxy_Pro-Game_Team.png"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#6 Samsung White</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">2763</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="None">October 19, 2014</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://upload.wikimedia.org/wikipedia/commons/6/63/RNG_logo.svg"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#7 RNG</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">2760</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="None">May 15, 2021</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://upload.wikimedia.org/wikipedia/en/4/46/T1_%28esports%29.png"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#8 T1</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">2755</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="None">May 12, 2017</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://upload.wikimedia.org/wikipedia/commons/6/63/RNG_logo.svg"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#9 RNG</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">2753</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="None">June 17, 2018</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://upload.wikimedia.org/wikipedia/en/1/18/FPX_Esports_logo.png"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#10 FunPlus Phoenix</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">2745</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="None">November 10, 2019</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://upload.wikimedia.org/wikipedia/en/1/1f/Invictus_Gaming_logo.png"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#11 Invictus Gaming</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">2740</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="None">April 03, 2018</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://upload.wikimedia.org/wikipedia/en/4/46/T1_%28esports%29.png"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#12 T1</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">2740</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="None">June 13, 2016</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://upload.wikimedia.org/wikipedia/en/a/ac/Top_Esports_logo.png"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#13 Top Esports</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">2732</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="None">June 14, 2020</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://upload.wikimedia.org/wikipedia/en/f/fe/DragonX_logo.png"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#14 DRX</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">2722</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="None">May 11, 2018</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://upload.wikimedia.org/wikipedia/en/1/1f/Invictus_Gaming_logo.png"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#15 Invictus Gaming</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">2719</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="None">May 13, 2019</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://upload.wikimedia.org/wikipedia/en/c/c4/Samsung_Galaxy_Pro-Game_Team.png"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#16 Samsung Galaxy</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">2715</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="None">December 01, 2017</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://upload.wikimedia.org/wikipedia/commons/3/33/Edward_Gaming_logo.png"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#17 Edward Gaming</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">2710</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="None">April 08, 2021</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://upload.wikimedia.org/wikipedia/en/0/00/Suning_%28esports%29_logo.png"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#18 Suning</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">2698</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="None">October 31, 2020</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://upload.wikimedia.org/wikipedia/commons/3/33/Edward_Gaming_logo.png"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#19 Edward Gaming</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">2698</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="None">June 12, 2015</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://upload.wikimedia.org/wikipedia/en/7/7d/JD_Gaming_logo.png"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#20 JD Gaming</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">2696</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="None">May 30, 2020</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://upload.wikimedia.org/wikipedia/en/1/18/FPX_Esports_logo.png"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#21 FunPlus Phoenix</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">2696</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="None">April 11, 2021</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://upload.wikimedia.org/wikipedia/en/f/fe/DragonX_logo.png"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#22 DRX</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">2695</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="None">October 12, 2017</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://upload.wikimedia.org/wikipedia/en/c/c4/Samsung_Galaxy_Pro-Game_Team.png"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#23 Samsung Blue</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">2693</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="None">August 16, 2014</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://upload.wikimedia.org/wikipedia/en/a/ac/Top_Esports_logo.png"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#24 Top Esports</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">2693</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="None">December 27, 2020</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-card" style="margin-bottom: 20px; max-width: 500px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; min-height: 155px">
+        <div style="display: flex; margin-left: 25px; height: 120px; width: 120px; justify-content: center; align-items: center">
+          <img style="max-height: 120px; max-width: 100px" src="https://upload.wikimedia.org/wikipedia/en/c/c4/Samsung_Galaxy_Pro-Game_Team.png"></img>
+        </div>
+        <div>
+          <div class="demo-card__primary">
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">#25 Samsung Galaxy</h2>
+            <h2 style="text-align: right" class="demo-card__title mdc-typography mdc-typography--headline6">2690</h2>
+          </div>
+          <div style="text-align: right; padding-bottom: 0" class="demo-card__secondary mdc-typography mdc-typography--body2"><a href="None">April 01, 2017</a></div>
+          <div style="text-align: right" class="demo-card__secondary mdc-typography mdc-typography--body2"></div>
+        </div>
+      </div>
+    </div>
+  </div></div>
+    <!-- Required MDC Web JavaScript library -->
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <script>
+     //setup tabs
+     window.onload = function() {
+       for (const e of document.querySelectorAll(".mdc-tab-bar")) {
+         let tab = new mdc.tabBar.MDCTabBar(e)
+         tab.preventDefaultOnClick = true
+
+         tab.listen("MDCTabBar:activated", function({detail: {index: index}}) {
+           // Hide all panels.
+           for (const t of document.querySelectorAll(".tab-panel")) {
+             t.classList.remove("active")
+           }
+
+           // Show the current one.
+           let tab = document.querySelector(".tab-panel:nth-child(" + (index + 2) + ")")
+           tab.classList.add("active")
+         })
+       }
+     };
+    </script>
+  </body>
+</html>
+  

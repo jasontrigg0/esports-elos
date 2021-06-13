@@ -282,7 +282,11 @@ const playerInfo = {
   "/player/8574/woxic": {
     name: "woxic",
     image: "https://img-cdn.hltv.org/playerbodyshot/iBaDcTTxzaitqkTlKcCGs0.png?ixlib=java-2.1.0&w=400&s=69853a603f1a29470c458e68371cd185"
+  },
+  "/player/20113/deko": {
+    name: "deko",
+    image: "https://img-cdn.hltv.org/playerbodyshot/0Wk9DiHhr9sJedFGO62w8B.png?ixlib=java-2.1.0&w=400&s=746f4d2c896de1f80b9834361488b9af"
   }
 }
 
-exports.playerInfo = playerInfo;
+exports.csgoPlayerInfo = playerInfo;

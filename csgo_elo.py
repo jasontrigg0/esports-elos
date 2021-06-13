@@ -8,7 +8,7 @@ class CsGoEloCalculator(EloCalculator):
         self.team_map_k = 0
         self.map_ct_k = 10 / 15.
         self.player_k = 20 / 15.
-        super().__init__(all_match_info, k, ml_iter, adj_iter)
+        super().__init__(all_match_info, "csgo", k, ml_iter, adj_iter, False)
     def new_elos(self):
         return {
             "team": {},
