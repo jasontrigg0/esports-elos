@@ -194,6 +194,10 @@ const teamInfo = {
   "/team/7718/movistar-riders": {
     name: "Movistar Riders",
     image: "https://pbs.twimg.com/profile_images/1387800239126503429/jtNDdT85_400x400.jpg"
+  },
+  "/team/7234/endpoint": {
+    name: "Endpoint",
+    image: "https://pbs.twimg.com/profile_images/1399707204970762245/PALFZlVW_400x400.jpg"
   }
 }
 
