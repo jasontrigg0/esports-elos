@@ -130,6 +130,10 @@ const teamInfo = {
   "LNG Esports": {
     name: "LNG Esports",
     image: "https://upload.wikimedia.org/wikipedia/en/a/ae/LNG_Esports_logo.png"
+  },
+  "Oh My God": {
+    name: "OMG",
+    image: "https://upload.wikimedia.org/wikipedia/en/5/54/OMG_esports_logo.png"
   }
 }
 
