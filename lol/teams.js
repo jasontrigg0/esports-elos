@@ -89,11 +89,11 @@ const teamInfo = {
   },
   "Afreeca Freecs": {
     name: "Afreeca Freecs",
-    image: ""
+    image: "https://pbs.twimg.com/profile_images/1336833869631246337/pK7ILMak_400x400.jpg"
   },
   "Liiv SANDBOX": {
     name: "Liiv SANDBOX",
-    image: ""
+    image: "https://pbs.twimg.com/profile_images/1399533799696834561/NlXdzr4c_400x400.jpg"
   },
   "TSM": {
     name: "TSM",
@@ -134,6 +134,22 @@ const teamInfo = {
   "Oh My God": {
     name: "OMG",
     image: "https://upload.wikimedia.org/wikipedia/en/5/54/OMG_esports_logo.png"
+  },
+  "LGD Gaming": {
+    name: "LGD",
+    image: "https://upload.wikimedia.org/wikipedia/en/thumb/e/ea/LGD_Gaming_logo.png/220px-LGD_Gaming_logo.png"
+  },
+  "Fredit BRION": {
+    name: "Fredit BRION",
+    image: "https://pbs.twimg.com/profile_images/1339390320652345345/Pm8KFC61_400x400.jpg"
+  },
+  "100 Thieves": {
+    name: "100 Thieves",
+    image: "https://upload.wikimedia.org/wikipedia/commons/1/16/100_Thieves_logo.svg"
+  },
+  "Bilibili Gaming": {
+    name: "Bilibili Gaming",
+    image: "https://upload.wikimedia.org/wikipedia/commons/e/ee/Bilibili_Gaming_logo.png"
   }
 }
 

@@ -286,6 +286,10 @@ const playerInfo = {
   "/player/20113/deko": {
     name: "deko",
     image: "https://img-cdn.hltv.org/playerbodyshot/0Wk9DiHhr9sJedFGO62w8B.png?ixlib=java-2.1.0&w=400&s=746f4d2c896de1f80b9834361488b9af"
+  },
+  "/player/8789/mir": {
+    name: "mir",
+    image: "https://static.hltv.org/images/playerprofile/thumb/8789/800.jpeg?v=8"
   }
 }
 

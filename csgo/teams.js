@@ -16,8 +16,8 @@ const teamInfo = {
     image: "https://upload.wikimedia.org/wikipedia/en/a/ac/NaVi_logo.svg"
   },
   "/team/8297/furia": {
-  name: "Furia",
-  image: "https://pbs.twimg.com/profile_images/1394491942696804354/K3Qdl0Vh_400x400.jpg"
+    name: "Furia",
+    image: "https://pbs.twimg.com/profile_images/1409898467250561025/UGYOFiWE_400x400.png"
   },
   "/team/4494/mousesports": {
     name: "mousesports",
@@ -81,7 +81,7 @@ const teamInfo = {
   },
   "/team/7020/spirit": {
     name: "Spirit",
-    image: "https://pbs.twimg.com/profile_images/1349363430273273858/RxpB-u6__400x400.jpg"
+    image: "https://pbs.twimg.com/profile_images/1404034598586232832/fDtLeysb_400x400.jpg"
   },
   "/team/8362/mad-lions": {
     name: "MAD Lions",
@@ -117,7 +117,7 @@ const teamInfo = {
   },
   "/team/11066/fiend": {
     name: "Fiend",
-    image: "https://pbs.twimg.com/profile_images/1373973058940248065/q65S1O_j_400x400.jpg"
+    image: "https://pbs.twimg.com/profile_images/1405793277840875522/TehfYy75_400x400.jpg"
   },
   "/team/11003/dbl-poney": {
     name: "Double Poney",
@@ -198,6 +198,10 @@ const teamInfo = {
   "/team/7234/endpoint": {
     name: "Endpoint",
     image: "https://pbs.twimg.com/profile_images/1399707204970762245/PALFZlVW_400x400.jpg"
+  },
+  "/team/10577/sinners": {
+    name: "Sinners",
+    image: "https://pbs.twimg.com/profile_images/1400725190326296578/E-Ntml05_400x400.jpg"
   }
 }
 
