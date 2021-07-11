@@ -294,6 +294,10 @@ const playerInfo = {
   "/player/18221/spinx": {
     name: "Spinx",
     image: "https://img-cdn.hltv.org/playerbodyshot/uCcs2URVwKTkD61Af9_UHr.png?bg=3e4c54&h=800&ixlib=java-2.1.0&rect=136%2C16%2C439%2C439&w=800&s=864b6b9ff86d8ff8cd0cede174f09d18"
+  },
+  "/player/18072/torzsi": {
+    name: "torzsi",
+    image: "https://static.hltv.org/images/playerprofile/thumb/18072/400.jpeg?v=2"
   }
 }
 
