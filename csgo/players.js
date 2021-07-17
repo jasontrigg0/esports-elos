@@ -298,6 +298,10 @@ const playerInfo = {
   "/player/18072/torzsi": {
     name: "torzsi",
     image: "https://static.hltv.org/images/playerprofile/thumb/18072/400.jpeg?v=2"
+  },
+  "/player/18987/b1t": {
+    name: "b1t",
+    image: "https://img-cdn.hltv.org/playerbodyshot/JFOeo3DP-Jj6p6KbhW7Je2.png?ixlib=java-2.1.0&w=400&s=d00c6789e14d9faa054ff100df57949b"
   }
 }
 

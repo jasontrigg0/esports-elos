@@ -150,6 +150,10 @@ const teamInfo = {
   "Bilibili Gaming": {
     name: "Bilibili Gaming",
     image: "https://upload.wikimedia.org/wikipedia/commons/e/ee/Bilibili_Gaming_logo.png"
+  },
+  "Fnatic": {
+    name: "Fnatic",
+    image: "https://upload.wikimedia.org/wikipedia/en/thumb/4/43/Esports_organization_Fnatic_logo.svg/1024px-Esports_organization_Fnatic_logo.svg.png"
   }
 }
 
