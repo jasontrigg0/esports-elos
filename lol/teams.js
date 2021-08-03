@@ -154,6 +154,10 @@ const teamInfo = {
   "Fnatic": {
     name: "Fnatic",
     image: "https://upload.wikimedia.org/wikipedia/en/thumb/4/43/Esports_organization_Fnatic_logo.svg/1024px-Esports_organization_Fnatic_logo.svg.png"
+  },
+  "Evil Geniuses.NA": {
+    name: "Evil Geniuses",
+    image: "https://pbs.twimg.com/profile_images/1420346531392024583/YoKVJjuA_400x400.jpg"
   }
 }
 
