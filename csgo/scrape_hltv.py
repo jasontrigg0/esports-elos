@@ -151,7 +151,6 @@ def process_match(match_url, files):
             # r = requests.get("https://hltv.org" + match_url)
             # soup = BeautifulSoup(r.text,"lxml")
             soup = url_to_soup("https://hltv.org" + match_url, js=True)
-            print("here")
             break
         except:
             retry_cnt += 1
