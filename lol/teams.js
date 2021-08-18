@@ -158,6 +158,10 @@ const teamInfo = {
   "Evil Geniuses.NA": {
     name: "Evil Geniuses",
     image: "https://pbs.twimg.com/profile_images/1420346531392024583/YoKVJjuA_400x400.jpg"
+  },
+  "Beyond Gaming": {
+    name: "Beyond Gaming",
+    image: ""
   }
 }
 
