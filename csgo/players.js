@@ -302,6 +302,10 @@ const playerInfo = {
   "/player/18987/b1t": {
     name: "b1t",
     image: "https://img-cdn.hltv.org/playerbodyshot/JFOeo3DP-Jj6p6KbhW7Je2.png?ixlib=java-2.1.0&w=400&s=d00c6789e14d9faa054ff100df57949b"
+  },
+  "/player/15662/zorte": {
+    name: "zorte",
+    image: "https://img-cdn.hltv.org/playerbodyshot/RN5o3ItmMXohXMc08Wf4kN.png?bg=3e4c54&h=200&ixlib=java-2.1.0&rect=124%2C12%2C451%2C451&w=200&s=6760530c2111fad14182ffcd7fe8d684"
   }
 }
 
