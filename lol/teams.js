@@ -89,11 +89,11 @@ const teamInfo = {
   },
   "Afreeca Freecs": {
     name: "Afreeca Freecs",
-    image: "https://pbs.twimg.com/profile_images/1336833869631246337/pK7ILMak_400x400.jpg"
+    image: ""
   },
   "Liiv SANDBOX": {
     name: "Liiv SANDBOX",
-    image: "https://pbs.twimg.com/profile_images/1399533799696834561/NlXdzr4c_400x400.jpg"
+    image: "https://upload.wikimedia.org/wikipedia/en/thumb/1/19/Liiv_Sandbox_logo.png/220px-Liiv_Sandbox_logo.png"
   },
   "TSM": {
     name: "TSM",
@@ -141,7 +141,7 @@ const teamInfo = {
   },
   "Fredit BRION": {
     name: "Fredit BRION",
-    image: "https://pbs.twimg.com/profile_images/1339390320652345345/Pm8KFC61_400x400.jpg"
+    image: ""
   },
   "100 Thieves": {
     name: "100 Thieves",
@@ -157,7 +157,7 @@ const teamInfo = {
   },
   "Evil Geniuses.NA": {
     name: "Evil Geniuses",
-    image: "https://pbs.twimg.com/profile_images/1420346531392024583/YoKVJjuA_400x400.jpg"
+    image: "https://upload.wikimedia.org/wikipedia/en/5/5f/Evil_geniuses_logo.svg"
   },
   "Beyond Gaming": {
     name: "Beyond Gaming",
