@@ -8,6 +8,7 @@ TEAM_MAPPING = {
     "Incredible Miracle": "DRX",
     "Longzhu Gaming": "DRX",
     "Kingzone DragonX": "DRX",
+    "DragonX": "DRX",
     "Samsung Ozone": "Samsung White",
     "HUYA Tigers": "ROX Tigers",
     "GE Tigers": "ROX Tigers",

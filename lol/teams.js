@@ -162,6 +162,10 @@ const teamInfo = {
   "Beyond Gaming": {
     name: "Beyond Gaming",
     image: ""
+  },
+  "Rogue Warriors": {
+    name: "Rogue Warriors",
+    image: "https://pbs.twimg.com/profile_images/1354813482147803137/Q62m0F0C_400x400.jpg"
   }
 }
 
