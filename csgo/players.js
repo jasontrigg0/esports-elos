@@ -306,6 +306,10 @@ const playerInfo = {
   "/player/15662/zorte": {
     name: "zorte",
     image: "https://img-cdn.hltv.org/playerbodyshot/RN5o3ItmMXohXMc08Wf4kN.png?bg=3e4c54&h=200&ixlib=java-2.1.0&rect=124%2C12%2C451%2C451&w=200&s=6760530c2111fad14182ffcd7fe8d684"
+  },
+  "/player/19645/jamyoung": {
+    name: "JamYoung",
+    image: "https://img-cdn.hltv.org/playerbodyshot/zChdcPnVh7_z3dRDfOw5zM.png?ixlib=java-2.1.0&w=400&s=268d0971dde69082d7f8f89f649b84aa"
   }
 }
 
