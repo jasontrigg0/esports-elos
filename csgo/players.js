@@ -310,6 +310,18 @@ const playerInfo = {
   "/player/19645/jamyoung": {
     name: "JamYoung",
     image: "https://img-cdn.hltv.org/playerbodyshot/zChdcPnVh7_z3dRDfOw5zM.png?ixlib=java-2.1.0&w=400&s=268d0971dde69082d7f8f89f649b84aa"
+  },
+  "/player/20127/w0nderful": {
+    name: "w0nderful",
+    image: "https://img-cdn.hltv.org/playerbodyshot/_EujVroZmzFK8QZjQyCxNx.png?ixlib=java-2.1.0&w=400&s=61e36d68b89bda52914af3de3ba28553"
+  },
+  "/player/9278/rez": {
+    name: "REZ",
+    image: "https://img-cdn.hltv.org/playerbodyshot/wo_7u8xDj7_NLVMkFr-_J7.png?ixlib=java-2.1.0&w=400&s=345bf9af95f327be72f2e0d003a556cc"
+  },
+  "/player/14273/idisbalance": {
+    name: "iDISBALANCE",
+    image: "https://img-cdn.hltv.org/playerbodyshot/klK-kvG617zYpu0R8RChwH.png?ixlib=java-2.1.0&w=400&s=e574f6591f286a5c04f8c65ece7b2df8"
   }
 }
 
