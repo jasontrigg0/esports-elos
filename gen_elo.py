@@ -99,7 +99,7 @@ class EloCalculator:
 
         print("cur adjusted elo")
         sorted_adj_elos = sorted([(team, self.adj_elos["team"][team]) for team in self.adj_elos["team"]], key = lambda x: x[1])
-        for x in [x for x in sorted_adj_elos if x[0] in self.performances][::-1][:100]:
+        for x in [x for x in sorted_adj_elos if x[0] in self.performances][::-1][:200]:
             print(x, self.adj_elos["team_last_match"][x[0]])
 
         print("best all-time")

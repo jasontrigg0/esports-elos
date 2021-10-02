@@ -202,6 +202,10 @@ const teamInfo = {
   "/team/10577/sinners": {
     name: "Sinners",
     image: "https://pbs.twimg.com/profile_images/1400725190326296578/E-Ntml05_400x400.jpg"
+  },
+  "/team/4773/pain": {
+    name: "paiN",
+    image: "https://pbs.twimg.com/profile_images/1429126781500633089/_Xpo5NVS_400x400.jpg"
   }
 }
 

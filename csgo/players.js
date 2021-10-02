@@ -322,6 +322,14 @@ const playerInfo = {
   "/player/14273/idisbalance": {
     name: "iDISBALANCE",
     image: "https://img-cdn.hltv.org/playerbodyshot/klK-kvG617zYpu0R8RChwH.png?ixlib=java-2.1.0&w=400&s=e574f6591f286a5c04f8c65ece7b2df8"
+  },
+  "/player/14494/junior": {
+    name: "junior",
+    image: "https://img-cdn.hltv.org/playerbodyshot/VFEdZ0GzBl1P9J10Zp9BW2.png?ixlib=java-2.1.0&w=400&s=2650eb096cc598fc3ffa8107b1106d13"
+  },
+  "/player/15698/dumau": {
+    name: "dumau",
+    image: "https://img-cdn.hltv.org/playerbodyshot/9mIBvOwTMysRMcwBfJVf8f.png?ixlib=java-2.1.0&w=400&s=c626354b5b7dd5a0767e5ad03859ff41"
   }
 }
 

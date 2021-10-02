@@ -226,7 +226,7 @@ async function main() {
 
   let lol_teams = [];
   for await (let row of readCsvFiles(['/tmp/lol_teams.csv'])) {
-    if (row["team"] === "FunPlus Phoenix Blaze" || row["team"] === "Joy Dream") {
+    if (row["team"] === "BeomSAMA Fan Club" || row["team"] === "FunPlus Phoenix Blaze" || row["team"] === "Joy Dream") {
       continue;
     }
     lol_teams.push(row);
