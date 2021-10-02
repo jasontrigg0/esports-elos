@@ -83,7 +83,7 @@ class CsGoEloCalculator(EloCalculator):
         #for now take the round share as ground truth. Could test this by seeing if you improve predictive
         #power by including the kda info
         total_player_err = 0
-        TEAM_FACTOR_CONSTANT = 0.4
+        TEAM_FACTOR_CONSTANT = 0.2
         for team in team_to_info:
             stats = team_to_info[team]["stats"]
             round_cnt = basic_info["total_score"]
