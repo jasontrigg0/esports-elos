@@ -206,6 +206,10 @@ const teamInfo = {
   "/team/4773/pain": {
     name: "paiN",
     image: "https://pbs.twimg.com/profile_images/1429126781500633089/_Xpo5NVS_400x400.jpg"
+  },
+  "/team/7969/nemiga": {
+    name: "Nemiga",
+    image: "https://pbs.twimg.com/profile_images/1397556823385952260/NJI6vgKj_400x400.jpg"
   }
 }
 
