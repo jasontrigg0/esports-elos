@@ -8,18 +8,6 @@ import os
 import time
 from jtutils import url_to_soup
 
-def split_list(l, key):
-    chunks = []
-    current_chunk = []
-    for x in l:
-        if key(x):
-            chunks.append(current_chunk)
-            current_chunk = []
-        else:
-            current_chunk.append(x)
-    chunks.append(current_chunk)
-    return chunks
-
 def get_team_info(soup):
     info = {}
     for team in soup.select("div.match-page div.team a"):
@@ -87,7 +75,7 @@ def get_stats_info(soup):
     return stats_info
 
 def get_match_list():
-    match_file = "/tmp/csgo_match_info.csv"
+    match_file = "csgo_match_info.csv"
     first_run = not os.path.exists(match_file)
     existing_matches = [] if first_run else [r["match"] for r in csv.DictReader(open(match_file))]
 
@@ -98,10 +86,10 @@ def get_match_list():
     match_writer = csv.DictWriter(open(match_file,"a"),fieldnames=match_fields)
 
     sides_fields = ["match", "map", "overtime", "team0", "side0", "score0", "team1", "side1", "score1"]
-    sides_writer = csv.DictWriter(open("/tmp/csgo_sides_info.csv","a"),fieldnames=sides_fields)
+    sides_writer = csv.DictWriter(open("csgo_sides_info.csv","a"),fieldnames=sides_fields)
 
     stats_fields = ["match", "map", "overtime", "team", "side", "player", "kills", "deaths", "adr", "kast", "rating"]
-    stats_writer = csv.DictWriter(open("/tmp/csgo_stats_info.csv","a"),fieldnames=stats_fields)
+    stats_writer = csv.DictWriter(open("csgo_stats_info.csv","a"),fieldnames=stats_fields)
 
     if first_run:
         match_writer.writeheader()
@@ -115,12 +103,12 @@ def get_match_list():
         "stats_writer": stats_writer
     }
 
-    for i in range(0,20):
+    for i in range(790,900):
         results_url = f"https://www.hltv.org/results?offset={i*100}"
-        #r = requests.get(results_url)
-        soup = url_to_soup(results_url, js=True)
-        #soup = BeautifulSoup(r.text,"lxml")
+        r = requests.get(results_url)
+        soup = BeautifulSoup(r.text,"lxml")
 
+        #soup = url_to_soup(results_url, js=True)
         for match in soup.select("div.result-con a.a-reset"):
             match_url = match.attrs["href"]
             if match_url in existing_matches:
@@ -141,6 +129,8 @@ def process_match(match_url, files):
         "/matches/2294587/xfunction-vs-mindplay-xfunction-iberian-cup-by-hitbox", #weird half situation? don't understand
         "/matches/2293464/mythic-vs-xile-rgn-summers-end-tournament", #two bo3s packed into one, skipping
         "/matches/2293119/cloud9-vs-ibuypower-cevo-professional-season-5-lan-finals", #two bo3s packed into one, skipping
+        "/matches/2342965/navi-2010-vs-natus-vincere-showmatch-cs", #6 maps, not supported
+        "/matches/2297249/mouz-vs-hellraisers-acer-predator-masters-powered-by-intel-season-1-finals", #6 maps, not supported
     ]:
         return
 
@@ -148,9 +138,9 @@ def process_match(match_url, files):
     retry_cnt = 0
     while retry_cnt < MAX_RETRIES:
         try:
-            # r = requests.get("https://hltv.org" + match_url)
-            # soup = BeautifulSoup(r.text,"lxml")
-            soup = url_to_soup("https://hltv.org" + match_url, js=True)
+            r = requests.get("https://hltv.org" + match_url)
+            soup = BeautifulSoup(r.text,"lxml")
+            # soup = url_to_soup("https://hltv.org" + match_url, js=True)
             break
         except:
             retry_cnt += 1

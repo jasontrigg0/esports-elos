@@ -2,7 +2,8 @@ import csv
 from gen_elo import EloCalculator
 
 TEAM_MAPPING = {
-    "DAMWON Gaming": "DWG KIA",
+    "DAMWON Gaming": "Dplus KIA",
+    "DWG KIA": "Dplus KIA",
     "SK Telecom T1": "T1",
     "Vici Gaming": "Rare Atom",
     "Incredible Miracle": "DRX",
@@ -16,10 +17,10 @@ TEAM_MAPPING = {
 }
 
 def load_match_info():
-    match_reader = csv.DictReader(open("/tmp/lol_sorted.csv"))
+    match_reader = csv.DictReader(open("lol.csv"))
 
     for row in match_reader:
-        #if row["DateTime UTC"].split()[0].replace("-","") > "20210505": continue
+        #if row["DateTime UTC"].split()[0].replace("-","") > "20231001": continue
 
         #map old team names to the newest version for continuity
         row["Team1"] = TEAM_MAPPING.get(row["Team1"],row["Team1"])

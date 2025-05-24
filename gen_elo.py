@@ -23,7 +23,7 @@ class EloCalculator:
         self.performances = {}
 
         self.alltime_team_top_25 = [] #top team performances
-        self.alltime_player_top_25 = [] #top team performanc
+        self.alltime_player_top_25 = [] #top team performances
 
         self.all_match_info = all_match_info
 
@@ -99,7 +99,8 @@ class EloCalculator:
 
         print("cur adjusted elo")
         sorted_adj_elos = sorted([(team, self.adj_elos["team"][team]) for team in self.adj_elos["team"]], key = lambda x: x[1])
-        for x in [x for x in sorted_adj_elos if x[0] in self.performances][::-1][:200]:
+        #for x in [x for x in sorted_adj_elos if x[0] in self.performances][::-1][:200]:
+        for x in [x for x in sorted_adj_elos][::-1][:200]:
             print(x, self.adj_elos["team_last_match"][x[0]])
 
         print("best all-time")
@@ -260,21 +261,19 @@ class EloCalculator:
             "team_err": 0,
             "player_err": 0
         }
-        if not reverse:
-            for match_info in self.all_match_info:
-                basic_info = match_info["basic_info"]
-                team_to_info = match_info["team_to_info"]
-                err = self.update_elos_from_match(basic_info, team_to_info, update_adj_elos)
-                total_err["team_err"] += err.get("team_err",0)
-                total_err["player_err"] += err.get("player_err",0)
-        else:
-            for match_info in self.all_match_info[::-1]:
-                basic_info = match_info["basic_info"]
-                team_to_info = match_info["team_to_info"]
-                err = self.update_elos_from_match(basic_info, team_to_info, update_adj_elos)
-                total_err["team_err"] += err.get("team_err",0)
-                total_err["player_err"] += err.get("player_err",0)
+
+        ordered_matches = self.all_match_info if not reverse else self.all_match_info[::-1]
+
+        for match_info in ordered_matches:
+            basic_info = match_info["basic_info"]
+            team_to_info = match_info["team_to_info"]
+            err = self.update_elos_from_match(basic_info, team_to_info, update_adj_elos)
+            total_err["team_err"] += err.get("team_err",0)
+            total_err["player_err"] += err.get("player_err",0)
+
         return total_err
+    def calculate_team_performance(self):
+        pass
     def update_elos_from_match(self, basic_info, team_to_info, update_adj_elos = False, record_performance = False, update_leaderboard = False):
         team_err = None
         player_err = None
@@ -284,7 +283,7 @@ class EloCalculator:
             "team_to_perf": {} #outcome - expected
         }]
         if update_adj_elos:
-            updates += [{
+            updates = [{
                 "update_elo": self.adj_elos,
                 "baseline_elo": self.ml_elos,
                 "team_to_perf": {}
